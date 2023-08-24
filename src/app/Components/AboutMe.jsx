@@ -24,8 +24,8 @@ const AboutMe = () => {
               learn and grow. If you have a good opportunity that matches my
               skills and experience then don't hesitate to contact me.
             </p>
-            <button className="text-white mt-5 contact py-3 px-7 rounded-sm bg-cyan-600 uppercase">
-              contact
+            <button className="main-button mt-5">
+              contact me
             </button>
           </div>
           <div className="skills-sec">

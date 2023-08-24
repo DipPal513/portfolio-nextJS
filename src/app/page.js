@@ -13,7 +13,7 @@ export default function Home() {
     <DarkMode />
     <AnimatedCursor 
       innerSize={8}
-      outerSize={8}
+      outerSize={13}
       color='000, 00, 000'
       outerAlpha={0.2}
       innerScale={1}

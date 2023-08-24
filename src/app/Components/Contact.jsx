@@ -41,16 +41,17 @@ const Contact = () => {
               <textarea
                 type="text"
                 placeholder="Message"
-                class="leading-none dark:text-gray-50 p-3 focus:outline-none dark:focus:border-blue-700 mt-4 border-0 bg-gray-200 dark:bg-gray-800 rounded"
-                rows={"20"}
-                
+                class="leading-none dark:text-gray-50 p-3 focus:outline-none dark:focus:border-blue-700 mt-4 border-0 bg-gray-100 dark:bg-gray-800 rounded"
+                rows={"10"}
               />
             </div>
-            tex
           </div>
-          <div>
-
+          <div className="flex justify-end">
+            <button className="main-button mt-5 ">
+              contact
+            </button>
           </div>
+          <div></div>
         </div>
       </div>
     </div>

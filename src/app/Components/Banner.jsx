@@ -17,14 +17,18 @@ const Banner = () => {
         position: "relative",
       }}
     >
-      <h1 className=" text-8xl font-bold">HEY, I'M DIP PAL</h1>
+      {/* <h1 className=" text-8xl font-bold">HEY, I'M Pritom Paul Dip</h1> */}
+      <h2 className="my-h2">
+        Pritom Paul Dip
+        <span>Pritom Paul Dip</span>
+        <span>Pritom Paul Dip</span>
+        <span>Front-End Web Developer</span>
+      </h2>
       <p className="text-xl text-blue-950 font-semibold w-3/6">
         A Frontend focused Web Developer building the Frontend of Websites and
         Web Applications that leads to the success of the overall product
       </p>
-      <button className="bg-cyan-600 px-10 py-4 rounded-sm shadow-sm text-white uppercase hover:shadow-lg transition-all transform duration-300 hover:translate-x-4">
-        Projects
-      </button>
+      <button className="main-button">Projects</button>
       <ul className="social-media-icons absolute left-0 top-[30%] flex flex-col space-y-5 px-5 bg-white shadow-xl rounded-e-lg text-3xl py-5">
         {[
           <Link href="https://github.com/dipPal513">
