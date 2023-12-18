@@ -1,20 +1,37 @@
-import React from 'react'
+import Link from "next/link";
 
-const Footer = () => {
+export default () => {
+  const footerNavs = [
+    {
+      href: "javascript:void()",
+      name: "About",
+    },
+    {
+      href: "javascript:void()",
+      name: "Blog",
+    },
+    {
+      href: "javascript:void()",
+      name: "",
+    },
+    {
+      href: "javascript:void()",
+      name: "Team",
+    },
+    {
+      href: "javascript:void()",
+      name: "Careers",
+    },
+
+    {
+      href: "javascript:void()",
+      name: "Suuport",
+    },
+  ];
+
   return (
-    <div className='footer bg-black py-10 '>
-      <div className="max-w-screen-lg mx-auto">
-        <div className="grid grid-cols-2">
-          <h3 className="text-2xl bold text-white uppercase">
-            Dip Pal
-          </h3>
-          <p className="text-white text-md mt-5">
-          A Frontend focused Web Developer building the Frontend of Websites and Web Applications that leads to the success of the overall product
-          </p>
-        </div>
-      </div>
-    </div>
-  )
-}
-
-export default Footer
+    <footer className="mx-auto md:px-8 py-5 w-full flex justify-center">
+     <p> &copy; {new Date().getFullYear()} Dip Pal All rights reserved.</p>
+    </footer>
+  );
+};

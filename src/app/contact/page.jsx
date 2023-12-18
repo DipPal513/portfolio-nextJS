@@ -1,4 +1,5 @@
-import PageHeader from "./PageHeader";
+import PageHeader from "../Components/PageHeader";
+import PrimaryButton from "../Components/PrimaryButton";
 
 const Contact = () => {
   return (
@@ -35,21 +36,21 @@ const Contact = () => {
           </div>
           <div class="md:flex items-center mt-8">
             <div class="w-full flex flex-col">
-              <label class="font-semibold leading-none dark:text-gray-300 text-stone-500">
+              <label class="font-semibold leading-none dark:text-gray-300 text-stone-500 ">
                 Message
               </label>
               <textarea
                 type="text"
                 placeholder="Message"
-                class="leading-none dark:text-gray-50 p-3 focus:outline-none dark:focus:border-blue-700 mt-4 border-0 bg-gray-100 dark:bg-gray-800 rounded"
+                class="leading-none dark:text-gray-50 p-3 focus:outline-none dark:focus:border-blue-700 mt-4 border-0 backdrop-blur-xl rounded"
                 rows={"10"}
               />
             </div>
           </div>
           <div className="flex justify-end">
-            <button className="main-button mt-5 ">
-              contact
-            </button>
+            <div className="mt-5 ">
+              <PrimaryButton text={"send"}/>
+            </div>
           </div>
           <div></div>
         </div>

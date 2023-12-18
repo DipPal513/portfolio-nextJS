@@ -5,13 +5,18 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Dip Pal',
-  description: 'Personal portfolio of Dip Pal. He is a website developer with experience of 2 years in front end',
+  description: 'Personal portfolio of Dip Pal. He is a website developer with experience of 2 years in both front-end and back-end.',
 }
 
 export default function RootLayout({ children }) {
+  
   return (
     <html lang="en">
-      <body className={` inter.className`}>{children}</body>
+      <body className={children}>
+        
+        {children}
+
+        </body>
     </html>
   )
 }
