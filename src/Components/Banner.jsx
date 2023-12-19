@@ -2,8 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import PrimaryButton from "./PrimaryButton";
-import Weidgs from "./Weidgs";
+
 import "../app/styles/Header.css";
+import Weidgs from "./weidgs";
 // import {useRef} from 'react';
 const Banner = () => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
