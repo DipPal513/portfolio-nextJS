@@ -1,7 +1,7 @@
 "use client"
 import PageHeader from '@/Components/PageHeader';
 import PrimaryButton from '@/Components/PrimaryButton';
-import Weidgs from '@/Components/weidgs';
+import Weidgs from '@/Components/Weidgs';
 
 
 const AboutMe = () => {

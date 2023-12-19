@@ -34,7 +34,7 @@ const Header = () => {
 
         </motion.button>
         <motion.ul
-        className={`flex-col items-center justify-center md:gap-x-4 fixed top-0 backdrop-blur-xl h-full text-white p-5 z-10 text-xl md:text-5xl md:gap-y-20 md:w-[80%] w-[100%] gap-y-5`}
+        className={`pt-24 flex-col items-center justify-center md:gap-x-4 fixed top-0 backdrop-blur-xl h-full text-white p-5 z-10 text-xl md:text-5xl md:gap-y-20 md:w-[80%] w-[100%] gap-y-5`}
           variants={menuVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}

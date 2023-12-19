@@ -1,10 +1,10 @@
 "use client";
-import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { useState } from "react";
 import PrimaryButton from "./PrimaryButton";
 
 import "../app/styles/Header.css";
-import Weidgs from "./weidgs";
+import Weidgs from "./Weidgs";
 // import {useRef} from 'react';
 const Banner = () => {
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
