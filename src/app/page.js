@@ -1,37 +1,28 @@
 "use client"
-import { Suspense, useState } from "react"
-import AnimatedCursor from "react-animated-cursor"
-import Banner from './Components/Banner'
-import DarkMode from './Components/DarkMode'
-import Footer from "./Components/Footer"
-import Header from './Header'
-import Loading from "./Components/Loading"
-import Projects from "./projects/page"
-import About from './about/page'
-import Contact from './contact/page'
-import { Sidebar } from "./Admin/Sidebar/Sidebar"
+import { useState } from "react"
+
+import About from './(root)/about/page'
+import Contact from './(root)/contact/page'
+import Skills from "./(root)/skills/page"
+
+import Banner from "@/Components/Banner"
+import Projects from "./(root)/projects/page"
 
 export default function Home() {
+  const [isLoading, setIsLoading] = useState(false);
 
   return (
 
     <>
-      <DarkMode />
-      {/* <Sidebar /> */}
-      <AnimatedCursor
-        innerSize={8}
-        outerSize={13}
-        color='000, 00, 000'
-        outerAlpha={0.2}
-        innerScale={1}
-        outerScale={5}
-      />
-        <Header />
-        <Banner />
-        <About />
-        <Projects />
-        <Contact />
-        <Footer />
+
+
+      <Banner />
+      <About />
+      <Projects />
+      <Skills />
+      <Contact />
+
+
     </>
 
   )
