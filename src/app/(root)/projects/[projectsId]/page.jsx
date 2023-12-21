@@ -19,12 +19,14 @@ const page = ({}) => {
           </p> */}
           <div className="grid md:grid-cols-2 grid-cols-1 gap-3 ">
             {el.images?.map((img, index) => (
-              <img
+              <div className="aspect-w-1 aspect-h-1">
+                <img
                 key={index}
                 src={img}
                 className="w-4/5 h-[300px] object-contain"
                 alt={`Image ${index}`}
               />
+              </div>
             ))}
           </div>
           <div className="project-details mt-5">
