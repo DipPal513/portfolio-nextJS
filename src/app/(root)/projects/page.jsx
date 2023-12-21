@@ -72,14 +72,19 @@ const Projects = () => {
                     <ins>Creation of</ins> Kiberbash
                   </p>
                 </div> */}
-                <button className="project_details_button"><Link href={`projects/${id}`}>See Details</Link></button>
+                <button className="w-2/4 py-2 project_details_button">
+                  <Link href={`/projects/${id}`}>see details</Link>
+                </button>
+
+                {/* <button className="project_details_button"><Link href={`projects/${id}`}>See Details</Link></button>
+                 */}
               </div>
             </div>
           );
         })}
       </div>
       <div className="flex items-center justify-center mt-7">
-        <PrimaryButton text="MOre" link={"/projects/allProjects"} target="" />
+        <PrimaryButton text="MOre" link={"/projects/allprojects"} target="" />
       </div>
     </div>
   );

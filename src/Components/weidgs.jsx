@@ -2,7 +2,7 @@ import React from "react";
 
 const Weidgs = ({ customClass, position, svg = "" }) => {
   return (
-    <span className={` ${customClass}`} style={position}>
+    <span className={` ease-in ${customClass}`} style={position}>
       {svg ? svg : ""}
     </span>
   );

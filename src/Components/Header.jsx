@@ -22,14 +22,14 @@ const Header = () => {
   };
 
   return (
-    <div className="header -lg dark:bg-gray-700">
+    <div className="header -lg ">
       <div className="main-header mx-auto max-w-screen-xl py-7 flex items-center justify-between px-3 ">
-        <motion.div initial={{x:"-100vw"}} animate={{x:0}} className="flex w-full md:w-auto items-center pr-4">
+        <motion.div  initial={{x:"-100vw"}} animate={{x:0}} className="flex w-full cursor-pointer md:w-auto items-center pr-4">
           <span className={`text-xl md:text-4xl font-bold mr-3 text-gray-300`}>{"< "}</span>
-          <h4 className={`logo uppercase font-bold text-lg md:text-2xl`}>{"Dip Pal"}</h4>
+          <h4 className={`logo uppercase font-bold text-lg md:text-2xl`}><Link href="/">{"Dip Pal"}</Link></h4>
           <span className={`font-bold text-xl md:text-4xl ms-3 text-gray-400`}>{" />"}</span>
         </motion.div>
-        <motion.button initial={{opacity:0}} animate={{opacity:1}} transition={{delay:.5,duration:.650}} className="text-4xl" onClick={toggleMenu}>
+        <motion.button initial={{opacity:0}} animate={{opacity:1}}  className="text-4xl" onClick={toggleMenu}>
           <RiMenu3Fill />
 
         </motion.button>

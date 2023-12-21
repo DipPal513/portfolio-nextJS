@@ -11,7 +11,6 @@ const Banner = () => {
 
   const updateCursorPosition = (e) => {
     setCursorPos({ x: e.clientX, y: e.clientY });
-    console.log(cursorPos.x / 100 + 5);
   };
 
   return (
@@ -85,10 +84,11 @@ const Banner = () => {
           text="Resume"
           customClass={"m-[0 !important]"}
           link={
-            "https://drive.google.com/file/d/1msXssLdVbPr-TLwwMJt96-cUuCWH1DyV/view?usp=sharing"
+            "https://drive.google.com/file/d/1uH7dNgsZ-255l9d1d0NsL280I_N2UnVk/view"
           }
+          target="_blank"
         />
-        <PrimaryButton text="Hire" link="" />
+        <PrimaryButton text="Hire" link="https://www.linkedin.com/in/dippal513/" target="_blank" />
       </div>
     </div>
   );

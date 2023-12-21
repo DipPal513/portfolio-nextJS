@@ -1,10 +1,9 @@
+@import "https://fonts.googleapis.com/css?family=Space+Mono";
 /* NFT Card Styling */
 .nft {
   max-width: 290px;
   border: 1px solid #ffffff22;
-  background-color: #282c34;
-  background: linear-gradient(0deg, rgba(40, 44, 52, 1) 0%, rgba(17, 0, 32, .5) 100%);
-  border-radius: .7rem;
+  border-radius: .1rem;
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
   overflow: hidden;
@@ -34,9 +33,10 @@
 }
 
 .nft .main .tokenImage {
-  border-radius: .5rem;
+  border-radius: .2rem;
   max-width: 100%;
   height: 250px;
+  margin-bottom: 5px;
   object-fit: cover;
 }
 
@@ -142,108 +142,62 @@
   font-size: 20rem;
   filter: opacity(0.5);
 }
+/*  button -------------- */
 
 
-.project_details_button,.project_details_button::after {
-  padding: 10px 50px;
-  font-size: 20px;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  background-color: transparent;
-  position: relative;
-}
 
-.project_details_button::after {
-  --move1: inset(50% 50% 50% 50%);
-  --move2: inset(31% 0 40% 0);
-  --move3: inset(39% 0 15% 0);
-  --move4: inset(45% 0 40% 0);
-  --move5: inset(45% 0 6% 0);
-  --move6: inset(14% 0 61% 0);
-  clip-path: var(--move1);
-  content: 'Details';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  display: block;
-}
 
-.project_details_button:hover::after {
-  animation: glitch_4011 1s;
-  text-shadow: 10 10px 10px black;
-  animation-timing-function: steps(2, end);
-  text-shadow: -3px -3px 0px #1df2f0, 3px 3px 0px #E94BE8;
-  background-color: transparent;
-  border: 3px solid rgb(0, 255, 213);
-}
-
-.project_details_button:hover {
-  text-shadow: -1px -1px 0px #1df2f0, 1px 1px 0px #E94BE8;
-}
 
 .project_details_button {
+  --hue: 190;
+  position: relative;
+  /* padding: 1rem 2rem; */
+  font-size: 1rem;
+  line-height: 1.5;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: none;
+  border: 1px solid hsl(var(--hue), 100%, 41%);
+  outline: transparent;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  transition: 0.25s;
+}
+.btn:hover {
+  background: hsl(var(--hue), 100%, 31%);
+}
+.btn-primary {
+  --hue: 187;
+}
+.btn-ghost {
+  color: hsl(var(--hue), 100%, 41%);
   background-color: transparent;
-  border: 1px solid var(--main-color);
-  box-shadow: 0px 10px 10px -10px var(--main-color);
+  border-color: hsl(var(--hue), 100%, 41%);
 }
-
-@keyframes glitch_4011 {
-  0% {
-    clip-path: var(--move1);
-    transform: translate(0px,-10px);
-  }
-
-  10% {
-    clip-path: var(--move2);
-    transform: translate(-10px,10px);
-  }
-
-  20% {
-    clip-path: var(--move3);
-    transform: translate(10px,0px);
-  }
-
-  30% {
-    clip-path: var(--move4);
-    transform: translate(-10px,10px);
-  }
-
-  40% {
-    clip-path: var(--move5);
-    transform: translate(10px,-10px);
-  }
-
-  50% {
-    clip-path: var(--move6);
-    transform: translate(-10px,10px);
-  }
-
-  60% {
-    clip-path: var(--move1);
-    transform: translate(10px,-10px);
-  }
-
-  70% {
-    clip-path: var(--move3);
-    transform: translate(-10px,10px);
-  }
-
-  80% {
-    clip-path: var(--move2);
-    transform: translate(10px,-10px);
-  }
-
-  90% {
-    clip-path: var(--move4);
-    transform: translate(-10px,10px);
-  }
-
-  100% {
-    clip-path: var(--move1);
-    transform: translate(0);
-  }
+.btn-ghost:hover {
+  color: white;
 }
-
+.project_details_button {
+  color: white;
+}
+.project_details_button::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, hsla(var(--hue), 100%, 41%, 0.5), transparent);
+  transform: translateX(-100%);
+  transition: 0.6s;
+}
+.project_details_button:hover {
+  background: transparent;
+  box-shadow: 0 0 20px 10px hsla(var(--hue), 100%, 41%, 0.5);
+}
+.project_details_button:hover::before {
+  transform: translateX(100%);
+}

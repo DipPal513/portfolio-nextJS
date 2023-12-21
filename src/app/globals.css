@@ -344,7 +344,7 @@ body::after{
   margin: 30px;
 }
 
-.btn a {
+.btn a,.btn span {
   position: absolute;
   left: 0;
   top: 0;
@@ -369,11 +369,11 @@ body::after{
   backdrop-filter: blur(15px)
 }
 
-.btn:hover a {
+.btn:hover a,.btn:hover span {
   letter-spacing: 3px;
 }
 
-.btn a::before {
+.btn a::before,.btn span::before {
   content: '';
   position: absolute;
   left: 0;
@@ -387,6 +387,9 @@ body::after{
 }
 
 .btn:hover a::before {
+  transform: skewX(40deg) translateX(200%);
+}
+.btn:hover span::before {
   transform: skewX(40deg) translateX(200%);
 }
 

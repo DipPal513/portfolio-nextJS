@@ -1,34 +1,56 @@
-"use client"
-import PageHeader from '@/Components/PageHeader';
-import PrimaryButton from '@/Components/PrimaryButton';
-import Weidgs from '@/Components/Weidgs';
+"use client";
+import Alert from "@/Components/Alert";
+import PageHeader from "@/Components/PageHeader";
+import PrimaryButton from "@/Components/PrimaryButton";
+import Weidgs from "@/Components/Weidgs";
 
-
+import { useRef, useState } from "react";
+import { motion, useScroll, useTransform } from "framer-motion";
+import hover3d from "@/utils/hover";
+// import { useContext } from "react";
+// import { GlobalContext } from "@/contexts/ContextProvider";
 const AboutMe = () => {
-  
+  const hero = useRef(null);
+
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+
+  const updateCursorPosition = (e) => {
+    setCursorPos({ x: e.clientX, y: e.clientY });
+  };
+  const imageHover = hover3d(hero, {
+    x: 4,
+    y: 5,
+    z: 15,
+  });
+
+  // const secRef = React.useRef<HTMLDivElement>(null);
   return (
-    <div className="aboutme py-8 relative">
+    <div
+      className="aboutme py-8 relative"
+      onMouseMove={(e) => updateCursorPosition(e)}
+    >
+      <Alert />
       <Weidgs
         customClass={"rightWeidgs"}
         position={{
           right: "15%",
-          top: "40%",
+          top: `40%`,
           background: "var(--main-color)",
           width: "200px",
           height: "200px",
         }}
       ></Weidgs>
-      
-        <Weidgs
-          customClass={"leftWeidgs"}
-          position={{
-            left: "15%",
-            top: "25%",
-            background: "yellow",
-            borderRadius: "0%",
-          }}
-        />
-      
+
+      <Weidgs
+        customClass={"leftWeidgs"}
+        position={{
+          left: `${cursorPos.x / 90}%`,
+          top: `${cursorPos.y / 100}%`,
+          background: "yellow",
+          borderRadius: "0%",
+        }}
+      />
+
       <div className="max-w-screen-lg mx-auto flex flex-col space-y-10 ">
         <PageHeader
           title="about me"
@@ -49,15 +71,19 @@ const AboutMe = () => {
             </p>
             <PrimaryButton className="" text="Connect" />{" "}
           </div>
-          <div className="px-5 md:px-0">
-          
-              <img
-                src="https://i.ibb.co/d67c1tF/Dippal-3.jpg"
-                alt="Dippal-3"
-                className="md:w-3/4"
-                
-              />
-       
+          <div className="px-5 md:px-0"ref={hero}>
+            <motion.img
+              
+              initial={{ opacity: 0 }}
+              whileInView={{ opacity: 1 }}
+              transition={{ type: "tween", duration: 0.5 }}
+              style={{
+                transform: imageHover.transform,
+              }}
+              src="https://i.ibb.co/d67c1tF/Dippal-3.jpg"
+              alt="Dippal-3"
+              className="md:w-3/5"
+            />
           </div>
         </div>
       </div>

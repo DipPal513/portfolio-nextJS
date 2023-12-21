@@ -43,6 +43,10 @@ const Skills = () => {
                 logo: "https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png",
               },
               {
+                name: "jest",
+                logo:"https://imgs.search.brave.com/qJgP9OO4WaQ19mavzFyXoLFpPl_V6Uohco0FDyafvXs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0ovamVzdC1s/b2dvLUY5OTAxRUJC/Rjctc2Vla2xvZ28u/Y29tLnBuZw"
+              },
+              {
                 name: "Bootstrap",
                 logo: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
               },
