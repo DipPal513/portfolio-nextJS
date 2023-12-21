@@ -1,5 +1,4 @@
 "use client";
-import Alert from "@/Components/Alert";
 import PageHeader from "@/Components/PageHeader";
 import PrimaryButton from "@/Components/PrimaryButton";
 import Weidgs from "@/Components/Weidgs";
@@ -26,7 +25,6 @@ const AboutMe = () => {
       className="aboutme py-8 relative"
       onMouseMove={(e) => updateCursorPosition(e)}
     >
-      <Alert />
       <Weidgs
         customClass={"rightWeidgs"}
         position={{
