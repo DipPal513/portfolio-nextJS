@@ -7,12 +7,9 @@ import Weidgs from "@/Components/Weidgs";
 import { useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import hover3d from "@/utils/hover";
-// import { useContext } from "react";
-// import { GlobalContext } from "@/contexts/ContextProvider";
 const AboutMe = () => {
-  const hero = useRef(null);
-
   const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const hero = useRef(null);
 
   const updateCursorPosition = (e) => {
     setCursorPos({ x: e.clientX, y: e.clientY });

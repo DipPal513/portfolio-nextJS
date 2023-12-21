@@ -78,9 +78,9 @@ const Skills = () => {
                 name: "GitHub",
                 logo: "https://raw.githubusercontent.com/jaywcjlove/logo/master/img/github.svg",
               },
-            ].map((element) => {
+            ].map((element,index) => {
               return (
-                <div className="flex-col items-center justify-center p-3">
+                <div className="flex-col items-center justify-center p-3" key={index}>
                   <img
                     src={element.logo}
                     className=""

@@ -39,30 +39,30 @@ const Projects = () => {
             title: "make your marketing website",
             desc: "this is a ecommerce website built with react...",
           },
-        ].map((data) => {
+        ].map((data,index) => {
           const { img, date, category, title, desc, id } = data;
           return (
-            <div class="nft my-4 md:my-0">
-              <div class="main">
+            <div className="nft my-4 md:my-0" key={index}>
+              <div className="main">
                 <img
                   className="tokenImage object-contain"
                   src={img}
                   alt="project_bg"
                 />
                 <h2 className="capitalize">{title}</h2>
-                <p class="description">{desc}</p>
-                <div class="tokenInfo">
-                  <div class="price">
+                <p className="description">{desc}</p>
+                <div className="tokenInfo">
+                  <div className="price">
                     <p className="text-[var(--main-color)]">{category}</p>
                   </div>
-                  <div class="duration">
+                  <div className="duration">
                     <ins>◷</ins>
                     <p>{date}</p>
                   </div>
                 </div>
                 {/* <hr /> */}
-                {/* <div class="creator">
-                  <div class="wrapper">
+                {/* <div className="creator">
+                  <div className="wrapper">
                     <img
                       src="https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"
                       alt="Creator"
@@ -75,9 +75,6 @@ const Projects = () => {
                 <button className="w-2/4 py-2 project_details_button">
                   <Link href={`/projects/${id}`}>see details</Link>
                 </button>
-
-                {/* <button className="project_details_button"><Link href={`projects/${id}`}>See Details</Link></button>
-                 */}
               </div>
             </div>
           );

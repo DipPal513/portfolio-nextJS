@@ -2,17 +2,15 @@
 import PageHeader from "@/Components/PageHeader";
 import PrimaryButton from "@/Components/PrimaryButton";
 import Weidgs from "@/Components/Weidgs";
-import {  useState } from "react";
+import { useState } from "react";
 import { useForm } from "react-hook-form";
-import emailjs from '@emailjs/browser';
-import Swal from 'sweetalert2/dist/sweetalert2.js'
-import 'sweetalert2/src/sweetalert2.scss'
-
-
+import emailjs from "@emailjs/browser";
+import Swal from "sweetalert2/dist/sweetalert2.js";
+import "sweetalert2/src/sweetalert2.scss";
 
 const Contact = () => {
   const [isValidEmail, setIsValidEmail] = useState(false);
-  const [isClick,setClick] =useState(false)
+  const [isClick, setClick] = useState(false);
   const {
     register,
     handleSubmit,
@@ -23,22 +21,26 @@ const Contact = () => {
   const onSubmit = (data) => {
     // Process form data here
     // Example: console.log(data);
-    setClick(!isClick)
+    setClick(!isClick);
     // Clear form after submission
     reset();
     setIsValidEmail(false); // Reset email validation state
 
-    emailjs.send('service_3ybke42', 'template_v8bsu1m', data, 'Fo9Ub2oH2KVZCh_n5');
-    
-     Swal.fire({
-      title: 'Success',
-      text: 'Thank you for your message',
-      icon: 'success',
-      confirmButtonText: 'OK'
-    }).then(res => res.isConfirmed && Swal.close)
+    emailjs.send(
+      "service_3ybke42",
+      "template_v8bsu1m",
+      data,
+      "Fo9Ub2oH2KVZCh_n5"
+    );
 
+    Swal.fire({
+      title: "Success",
+      text: "Thank you for your message",
+      icon: "success",
+      confirmButtonText: "OK",
+    }).then((res) => res.isConfirmed && Swal.close);
   };
- 
+
   return (
     <div className="contact-section py-10">
       <Weidgs
@@ -68,7 +70,7 @@ const Contact = () => {
           title="Contact Me"
           description="Feel free to Contact me by submitting the form below and I will get back to you as soon as possible"
         />
-        <form  className="py-10 px-5" onSubmit={handleSubmit(onSubmit)}>
+        <form className="py-10 px-5" onSubmit={handleSubmit(onSubmit)}>
           <div className="md:flex items-center mt-8">
             <div className="w-full flex flex-col">
               <label className="font-semibold leading-none dark:text-gray-300 text-stone-500">

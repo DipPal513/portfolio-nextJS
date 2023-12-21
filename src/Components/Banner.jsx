@@ -28,7 +28,10 @@ const Banner = () => {
     >
       <Weidgs
         customClass={"leftWeidgs"}
-        position={{ left: 0 + ((cursorPos.y / 5) + 10), top: 20 + (cursorPos.x /5) }}
+        position={{
+          left: 0 + (cursorPos.y / 5 + 10),
+          top: 20 + cursorPos.x / 5,
+        }}
         animate={{ background: "red" }}
       ></Weidgs>
 
@@ -36,33 +39,31 @@ const Banner = () => {
         customClass={"rightWeidgs"}
         position={{
           right: "30%",
-          top: 20 + (cursorPos.y / 5),
+          top: 20 + cursorPos.y / 5,
           background: "magenta",
           borderRadius: "50%",
           width: "150px",
           height: "150px",
-          
         }}
       ></Weidgs>
       <Weidgs
-        customClass={"rightWeidgs"}
+        customclassName={"rightWeidgs"}
         position={{ right: "10%", top: "80%", marginLeft: `${cursorPos.x}` }}
       ></Weidgs>
 
-      <div class="content">
-        <div class="content__container">
-          <p class="content__container__text">Hello</p>
+      <div className="content">
+        <div className="content__container">
+          <p className="content__container__text">Hello</p>
 
-          <ul class="content__container__list">
-            <li class="content__container__list__item">world !</li>
-            <li class="content__container__list__item">coder !</li>
-            <li class="content__container__list__item">users !</li>
-            <li class="content__container__list__item">uiverse</li>
+          <ul className="content__container__list">
+            <li className="content__container__list__item">world !</li>
+            <li className="content__container__list__item">coder !</li>
+            <li className="content__container__list__item">users !</li>
+            <li className="content__container__list__item">uiverse</li>
           </ul>
         </div>
       </div>
       <motion.h4
-
         className="text-4xl font-bold mt-0 font-mono"
         initial={{ y: "-10", opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
@@ -71,10 +72,7 @@ const Banner = () => {
         I am Dip
       </motion.h4>
 
-      <p
-        className="text-xl text-white font-semibold px-4 md:px-0 md:w-3/6 mt-5"
-      
-      >
+      <p className="text-xl text-white font-semibold px-4 md:px-0 md:w-3/6 mt-5">
         A Full-Stack Web Developer building the Websites and Web Applications
         that leads to the success of the overall product
       </p>
@@ -82,13 +80,17 @@ const Banner = () => {
       <div className="flex items-center gap-x-2 md:gap-x-5">
         <PrimaryButton
           text="Resume"
-          customClass={"m-[0 !important]"}
+          customclassName={"m-[0 !important]"}
           link={
             "https://drive.google.com/file/d/1uH7dNgsZ-255l9d1d0NsL280I_N2UnVk/view"
           }
           target="_blank"
         />
-        <PrimaryButton text="Hire" link="https://www.linkedin.com/in/dippal513/" target="_blank" />
+        <PrimaryButton
+          text="Hire"
+          link="https://www.linkedin.com/in/dippal513/"
+          target="_blank"
+        />
       </div>
     </div>
   );

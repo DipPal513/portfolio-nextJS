@@ -4,16 +4,15 @@ import { AiFillTwitterCircle } from "react-icons/ai";
 import { BsGithub } from "react-icons/bs";
 import { GrLinkedin } from "react-icons/gr";
 import { RiFacebookCircleFill } from "react-icons/ri";
-import {motion} from 'framer-motion'
+import { motion } from "framer-motion";
 export default () => {
-
-
   return (
-    <motion.footer 
-    initial={{opacity:0}}
-    whileInView={{opacity:1}}
-    className="mx-auto md:px-8 py-5 w-full flex flex-col items-center justify-center">
-       <ul className="flex space-x-5 px-5 bg-transparent items-center mb-3 text-xl">
+    <motion.footer
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      className="mx-auto md:px-8 py-5 w-full flex flex-col items-center justify-center"
+    >
+      <ul className="flex space-x-5 px-5 bg-transparent items-center mb-3 text-xl">
         {[
           <Link href="https://github.com/dipPal513">
             <BsGithub />{" "}
@@ -28,10 +27,10 @@ export default () => {
             <GrLinkedin />{" "}
           </Link>,
         ].map((logo, index, array) => {
-          return <li>{logo}</li>;
+          return <li key={index}>{logo}</li>;
         })}
       </ul>
-     <p> &copy; {new Date().getFullYear()} Dip Pal All rights reserved.</p>
+      <p> &copy; {new Date().getFullYear()} Dip Pal All rights reserved.</p>
     </motion.footer>
   );
 };

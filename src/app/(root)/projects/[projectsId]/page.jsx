@@ -1,12 +1,12 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-
-import { useParams } from "next/navigation";
 import data from "../../../../../public/projectData";
 import PrimaryButton from "@/Components/PrimaryButton";
+import { usePathname } from "next/navigation";
 const page = ({}) => {
-  const { projectsId } = useParams();
+  const pathname = usePathname();
+  const projectsId = pathname.split("/").pop();
   const singleProject = data.filter((el) => el.id == projectsId);
 
   return (
@@ -21,11 +21,11 @@ const page = ({}) => {
             {el.images?.map((img, index) => (
               <div className="aspect-w-1 aspect-h-1">
                 <img
-                key={index}
-                src={img}
-                className="w-4/5 h-[300px] object-contain"
-                alt={`Image ${index}`}
-              />
+                  key={index}
+                  src={img}
+                  className="w-4/5 h-[300px] object-contain"
+                  alt={`Image ${index}`}
+                />
               </div>
             ))}
           </div>
