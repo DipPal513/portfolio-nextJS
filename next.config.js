@@ -9,7 +9,7 @@ module.exports = {
         },
         {
           protocol: "https",
-          hostname: "https://www.pexels.com/",
+          hostname: "*",
           // ...
         },
       ],

@@ -1,5 +1,6 @@
 import PageHeader from "@/Components/PageHeader";
 import Weidgs from "@/Components/Weidgs";
+import Image from "next/image";
 
 const Skills = () => {
   return (
@@ -81,12 +82,12 @@ const Skills = () => {
             ].map((element,index) => {
               return (
                 <div className="flex-col items-center justify-center p-3" key={index}>
-                  <img
+                  <Image
                     src={element.logo}
                     className=""
+                    width={100}
+                    height={100}
                     style={{
-                      width: "100px !important",
-                      height: "100px",
                       objectFit: "contain",
                     }}
                     alt=""
