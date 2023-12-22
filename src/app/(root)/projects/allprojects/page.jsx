@@ -1,22 +1,22 @@
 "use client";
 import React, { useState } from "react";
 import "../../../styles/project.css";
-import data from "../../../../../public/projectData";
+import {projectData} from "../../../../../public/projectData";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { StyledComponentsConfig } from "next/dist/server/config-shared";
 const AllProjects = () => {
   const allCategories = [];
   const [selectedCategory, setSelectedCategory] = useState("all");
-  data.map((el) => {
+  projectData.map((el) => {
     allCategories.push(el.category);
   });
 
   const newAllCategory = [...new Set(allCategories)];
-  const filteredData =
+  const filtered =
     selectedCategory === "all"
-      ? data
-      : data.filter((el) => el.category === selectedCategory);
+      ? projectData
+      : projectData.filter((el) => el.category === selectedCategory);
   console.log(allCategories, newAllCategory);
   return (
     <div className="all projects">
@@ -45,7 +45,7 @@ const AllProjects = () => {
             className="flex items-center justify-center flex-wrap gap-x-5"
             key={selectedCategory}
           >
-            {filteredData?.map((el) => (
+            {filtered?.map((el) => (
               <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, delay: 0.4 }}

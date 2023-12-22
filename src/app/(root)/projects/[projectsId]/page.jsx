@@ -1,13 +1,13 @@
 "use client";
 import Link from "next/link";
 import React from "react";
-import data from "../../../../../public/projectData";
+import { projectData } from "../../../../../public/projectData";
 import PrimaryButton from "@/Components/PrimaryButton";
 import { usePathname } from "next/navigation";
 const ProjectDetails = () => {
   const pathname = usePathname();
   const projectsId = pathname.split("/").pop();
-  const singleProject = data.filter((el) => el.id == projectsId);
+  const singleProject = projectData.filter((el) => el.id == projectsId);
 
   return (
     <div className="">
