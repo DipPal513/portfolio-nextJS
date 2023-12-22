@@ -45,7 +45,7 @@ const AboutMe = () => {
               digital experiences. Passionate about pixel-perfect design and
               coding magic, I craft frontend wonders that elevate products. I&apos;m
               a proud member of the Dev Community, sharing insights and chasing
-              the thrill of continual growth. Let's build something
+              the thrill of continual growth. Let&apos;s build something
               extraordinary together!
             </p>
             <PrimaryButton className="" text="Connect" />{" "}
