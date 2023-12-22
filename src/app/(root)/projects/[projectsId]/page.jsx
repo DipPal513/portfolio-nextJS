@@ -42,7 +42,7 @@ const ProjectDetails = () => {
               </h1>
               <div className="">
                 <ul className="ms-5 mt-4 list-disc ">
-                 {el.technologies.map( tech => <li className="text-xl">{tech}</li>)
+                 {el.technologies.map( (tech,index) => <li className="text-xl" key={index}>{tech}</li>)
                   }
                 </ul>
               </div>
