@@ -82,7 +82,7 @@ const Banner = () => {
           text="Resume"
           customclassName={"m-[0 !important]"}
           link={
-            "https://drive.google.com/file/d/1uH7dNgsZ-255l9d1d0NsL280I_N2UnVk/view"
+            "https://drive.google.com/file/d/1CuVsby_PSNJhp8gTUWZ2hp89_6cSeKAz/view?usp=sharing"
           }
           target="_blank"
         />
