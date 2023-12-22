@@ -15,6 +15,7 @@ const projectData = [
     liveLink: "https://simple-gym-website.firebaseapp.com/",
     category: "ecommerce",
     challenges: "User authentication integration, Responsive UI implementation"
+    ,technologies:["react",'firebase',"bootstrap","dynamic routing","private route",'context api','express js',"mongo db",'node js']
   },
   {
     id: 2,
@@ -32,6 +33,7 @@ const projectData = [
     liveLink: "https://simple-jewelry-website.firebaseapp.com/",
     category: "ecommerce",
     challenges: "Database optimization, Secure payment integration"
+    ,technologies:["react",'firebase',"bootstrap","dynamic routing","private route",'context api','express js',"mongo db",'node js']
   },
   {
     id: 3,
@@ -49,6 +51,7 @@ const projectData = [
     liveLink: "https://amado-template.netlify.app/",
     category: "ecommerce",
     challenges: "Front-end design, UI/UX optimization"
+    ,technologies:["react","bootstrap","dynamic routing","private route",'context api']
   },
   {
     id: 4,
@@ -62,10 +65,11 @@ const projectData = [
       "https://i.ibb.co/5j9CxxT/Screenshot-34.png"
     ],
     thumbnail: "https://i.ibb.co/FDGDNDX/Screenshot-33.png",
-    sourceCode: "https://github.com/DipPal513/portfolio-Next-Js",
-    liveLink: "https://ykjhho.netlify.app/about",
+    sourceCode: "https://github.com/DipPal513/portfolio",
+    liveLink: "https://ykjhho.netlify.app/",
     category: "portfolio",
     challenges: "Interactive UI, Project presentation"
+    ,technologies:["react","bootstrap","dynamic routing","private route",'context api']
   },
   {
     id: 5,
@@ -76,10 +80,11 @@ const projectData = [
 
       'https://i.ibb.co/LCK4L1g/shopspy-ecommerce-app-reactjs-netlify-app-2.png'],
     thumbnail: "https://i.ibb.co/k33nnsD/shopspy-ecommerce-app-reactjs-netlify-app.png", // Add the URL for the thumbnail image
-    sourceCode: "https://github.com/DipPal513/shopspy-ecommerce",
+    sourceCode: "https://github.com/DipPal513/https://github.com/DipPal513/shopspy_ecommerce",
     liveLink: "https://shopspy-ecommerce-app-reactjs.netlify.app/",
     category: "ecommerce",
     challenges: "Search functionality, "
+    ,technologies:["react",'firebase',"tailwind","dynamic routing","private route",'context api','express js',"mongo db",'node js']
   },
   {
     id: 6,
@@ -91,10 +96,11 @@ const projectData = [
       "https://i.ibb.co/Pr2Lmk6/adoring-pare-75c8e3-netlify-app-home-1.png",
       "https://i.ibb.co/HB4bZhQ/adoring-pare-75c8e3-netlify-app-home-2.png"],
     thumbnail: "https://i.ibb.co/Pr2Lmk6/adoring-pare-75c8e3-netlify-app-home-1.png", // Add the URL for the thumbnail image
-    sourceCode: "https://github.com/DipPal513/service-based-website",
+    sourceCode: "https://github.com/DipPal513/academia-website",
     liveLink: "https://adoring-pare-75c8e3.netlify.app/home",
     category: "service-based",
     challenges: "Service display, Contact integration"
+    ,technologies:["Html","css","javascript"]
   },
   {
     id: 7,
@@ -106,9 +112,10 @@ const projectData = [
       'https://i.ibb.co/FhZbTY0/quirky-benz-0101b5-netlify-app-3.png'],
     thumbnail: "https://i.ibb.co/WzzW3Bp/quirky-benz-0101b5-netlify-app.png", // Add the URL for the thumbnail image
     sourceCode: "https://github.com/DipPal513/evento-website",
-    liveLink: "https://evento-service-based.netlify.app/",
+    liveLink: "https://github.com/DipPal513/Evento-Teamplate.git",
     category: "service-based",
     challenges: "Event service presentation, Contact integration"
+    ,technologies:["html",'css','js']
   },
   {
     id: 8,
@@ -117,10 +124,11 @@ const projectData = [
       "A minimalistic and clean portfolio UI showcasing projects and skills. It emphasizes simplicity and focuses on highlighting project details.",
     images: ["https://i.ibb.co/DRcHWLH/practical-goldwasser-a3cc7f-netlify-app.png","https://i.ibb.co/mCVzhdn/practical-goldwasser-a3cc7f-netlify-app-2.png"],
     thumbnail: "https://i.ibb.co/PzvS98b/practical-goldwasser-a3cc7f-netlify-app-1.png", // Add the URL for the thumbnail image
-    sourceCode: "https://github.com/DipPal513/clean-portfolio-ui",
+    sourceCode: "https://github.com/DipPal513/repositories",
     liveLink: "https://practical-goldwasser-a3cc7f.netlify.app/",
     category: "portfolio",
     challenges: "Minimalistic design, Project display"
+    ,technologies:['html','css','js']
   }
   // Add more project objects following the same structure...
 ];

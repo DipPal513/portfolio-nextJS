@@ -17,7 +17,6 @@ const AllProjects = () => {
     selectedCategory === "all"
       ? projectData
       : projectData.filter((el) => el.category === selectedCategory);
-  console.log(allCategories, newAllCategory);
   return (
     <div className="all projects">
       <div className="max-w-screen-lg mx-auto py-5 text-center">

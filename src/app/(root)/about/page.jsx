@@ -3,12 +3,12 @@ import PageHeader from "@/Components/PageHeader";
 import PrimaryButton from "@/Components/PrimaryButton";
 import Weidgs from "@/Components/Weidgs";
 import { motion } from "framer-motion";
+import { MdLocationOn } from "react-icons/md";
+import { IoCallSharp }from "react-icons/io5";
 // import hover3d from "@/utils/hover";
 const AboutMe = () => {
   return (
-    <div
-      className="aboutme py-8 relative"
-    >
+    <div className="aboutme py-8 relative">
       <Weidgs
         customClass={"rightWeidgs"}
         position={{
@@ -41,13 +41,23 @@ const AboutMe = () => {
               get to know me
             </h4>
             <p className="text-white text-lg mb-5">
-              I&apos;m a full-stack web wizard with 2+ years of experience sculpting
-              digital experiences. Passionate about pixel-perfect design and
-              coding magic, I craft frontend wonders that elevate products. I&apos;m
-              a proud member of the Dev Community, sharing insights and chasing
-              the thrill of continual growth. Let&apos;s build something
-              extraordinary together!
+              I&apos;m a full-stack web wizard with 2+ years of experience
+              sculpting digital experiences. Passionate about pixel-perfect
+              design and coding magic, I craft frontend wonders that elevate
+              products. I&apos;m a proud member of the Dev Community, sharing
+              insights and chasing the thrill of continual growth. Let&apos;s
+              build something extraordinary together!
             </p>
+            <div className="mb-3">
+              <p className="flex items-center gap-x-2 text-lg">
+              <MdLocationOn />
+               <span>Dhaka,Bangladesh</span>
+              </p>
+              <p className="flex items-center gap-x-2 text-lg">
+              <IoCallSharp />
+               <span>+88 01625-197575</span>
+              </p>
+            </div>
             <PrimaryButton className="" text="Connect" />{" "}
           </div>
           <div className="px-5 md:px-0">

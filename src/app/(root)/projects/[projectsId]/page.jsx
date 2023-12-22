@@ -4,6 +4,7 @@ import React from "react";
 import { projectData } from "../../../../../public/projectData";
 import PrimaryButton from "@/Components/PrimaryButton";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 const ProjectDetails = () => {
   const pathname = usePathname();
   const projectsId = pathname.split("/").pop();
@@ -19,11 +20,11 @@ const ProjectDetails = () => {
           </p> */}
           <div className="grid md:grid-cols-2 grid-cols-1 gap-3 ">
             {el.images?.map((img, index) => (
-              <div className="aspect-w-1 aspect-h-1"key={index}>
+              <div className=" overflow-scroll bg-transparent overflow-x-hidden h-[50vh]"key={index}>
                 <img
                   
                   src={img}
-                  className="w-4/5 h-[300px] object-contain"
+                  className=""
                   alt={`Image ${index}`}
                 />
               </div>
@@ -40,12 +41,9 @@ const ProjectDetails = () => {
                 <span className="text-[var(--main-color)] mt-4">USED</span>
               </h1>
               <div className="">
-                <ul className="ms-3 mt-4">
-                  <li>HTML</li>
-                  <li>CSS</li>
-                  <li>React</li>
-                  <li>Node Js</li>
-                  <li>Python</li>
+                <ul className="ms-5 mt-4 list-disc ">
+                 {el.technologies.map( tech => <li className="text-xl">{tech}</li>)
+                  }
                 </ul>
               </div>
             </div>
@@ -53,6 +51,11 @@ const ProjectDetails = () => {
               <PrimaryButton
                 text={"Live Link"}
                 link={el.liveLink}
+                target={"_blank"}
+              />
+              <PrimaryButton
+                text={"Code Link"}
+                link={el.sourceCode}
                 target={"_blank"}
               />
             </div>
