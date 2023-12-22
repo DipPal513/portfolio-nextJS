@@ -4,15 +4,15 @@ import React from "react";
 import data from "../../../../../public/projectData";
 import PrimaryButton from "@/Components/PrimaryButton";
 import { usePathname } from "next/navigation";
-const page = () => {
+const ProjectDetails = () => {
   const pathname = usePathname();
   const projectsId = pathname.split("/").pop();
   const singleProject = data.filter((el) => el.id == projectsId);
 
   return (
     <div className="">
-      {singleProject.map((el) => (
-        <div className="center max-w-screen-lg mx-auto py-10 px-3">
+      {singleProject.map((el,index) => (
+        <div className="center max-w-screen-lg mx-auto py-10 px-3" key={index}>
           <h1 className="md:text-4xl font-bold text-xl mb-4">{el.name}</h1>
           {/* <p className="text-gray-300 text-lg break-words mt-4 md:w-4/5 mb-5">
             {el.description}
@@ -63,4 +63,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default ProjectDetails;

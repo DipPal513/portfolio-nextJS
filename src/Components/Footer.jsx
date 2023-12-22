@@ -5,7 +5,7 @@ import { BsGithub } from "react-icons/bs";
 import { GrLinkedin } from "react-icons/gr";
 import { RiFacebookCircleFill } from "react-icons/ri";
 import { motion } from "framer-motion";
-export default () => {
+const Footer = () => {
   return (
     <motion.footer
       initial={{ opacity: 0 }}
@@ -13,24 +13,32 @@ export default () => {
       className="mx-auto md:px-8 py-5 w-full flex flex-col items-center justify-center"
     >
       <ul className="flex space-x-5 px-5 bg-transparent items-center mb-3 text-xl">
-        {[
-          <Link href="https://github.com/dipPal513">
+        <li>
+          <Link href="https://github.com/dipPal513" target="_blank">
             <BsGithub />{" "}
-          </Link>,
-          <Link href="https://github.com/dipPal513">
+          </Link>
+        </li>
+        <li>
+          <Link href="https://github.com/dipPal513" target="_blank">
             <AiFillTwitterCircle />{" "}
-          </Link>,
-          <Link href="https://web.facebook.com/DipPal513/">
+          </Link>
+        </li>
+        <li>
+          <Link href="https://web.facebook.com/DipPal513/" target="_blank">
             <RiFacebookCircleFill />{" "}
-          </Link>,
-          <Link href="https://www.linkedin.com/in/dip-pal-107a8a203/">
+          </Link>
+        </li>
+        <li>
+          <Link
+            href="https://www.linkedin.com/in/dip-pal-107a8a203/"
+            target="_blank"
+          >
             <GrLinkedin />{" "}
-          </Link>,
-        ].map((logo, index, array) => {
-          return <li key={index}>{logo}</li>;
-        })}
+          </Link>
+        </li>
       </ul>
       <p> &copy; {new Date().getFullYear()} Dip Pal All rights reserved.</p>
     </motion.footer>
   );
 };
+export default Footer;
