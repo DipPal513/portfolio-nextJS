@@ -1,3 +1,4 @@
+"use client"
 import PageHeader from "@/Components/PageHeader";
 import Weidgs from "@/Components/Weidgs";
 import Image from "next/image";
@@ -22,11 +23,11 @@ const Skills = () => {
       <div className="max-w-screen-lg mx-auto my-5">
         <PageHeader
           title={"My skiils"}
-          description={"with those i work with"}
+          description={"Beyond weapons, I excel in problem-solving, leadership, and adaptability, showcasing a versatile skill set."}
         />
         <div className="skills-hub flex mt-4 flex-wrap items-center justify-center gap-x-4 py-5">
           <ul className="flex items-center justify-center flex-wrap">
-            {skills_data.map((element,index) => {
+            {skills_data?.map((element,index) => {
               return (
                 <div className="flex-col items-center justify-center p-3" key={index}>
                   <Image

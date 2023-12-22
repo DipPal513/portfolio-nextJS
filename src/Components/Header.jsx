@@ -44,7 +44,7 @@ const Header = () => {
           <button className="fixed top-5 right-5 text-2xl font-bold p-5 cursor-pointer" onClick={closeMenu} aria-label="Close Menu">
             <AiOutlineClose />
           </button>
-          {["home", "about", "projects", "blogs", "contact"].map((el, index) => (
+          {["home", "about","skills", "projects", "blogs", "contact"].map((el, index) => (
             <motion.li
               key={index}
               className="uppercase mb-10 md:mb-0 py-1 md:py-5 text-center"
