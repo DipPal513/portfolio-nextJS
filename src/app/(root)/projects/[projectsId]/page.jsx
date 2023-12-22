@@ -21,9 +21,12 @@ const ProjectDetails = () => {
           <div className="grid md:grid-cols-2 grid-cols-1 gap-3 ">
             {el.images?.map((img, index) => (
               <div className=" overflow-scroll bg-transparent overflow-x-hidden h-[50vh]"key={index}>
-                <img
-                  
+                <Image
+                  width={400}
+                  height={350}
+                  // fill
                   src={img}
+                  // loader ={() => <h2 className="text-xl text-white">Loading..</h2>}
                   className=""
                   alt={`Image ${index}`}
                 />

@@ -33,6 +33,7 @@ const Header = () => {
         >
           <Image
             src="https://i.ibb.co/qx8F7pS/logo-no-background.png"
+            alt="Header Logo"
             width={100}
             height={80}
           />

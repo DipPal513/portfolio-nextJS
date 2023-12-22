@@ -5,6 +5,7 @@ import {projectData} from "../../../../../public/projectData";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 import { StyledComponentsConfig } from "next/dist/server/config-shared";
+import Image from "next/image";
 const AllProjects = () => {
   const allCategories = [];
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -56,17 +57,20 @@ const AllProjects = () => {
                 <div className="nft my-4 md:my-0">
                   <div className="main">
                     {/* Adjust this part to display your product details */}
-                    <img
+                    <div className="overflow-hidden h-[150px]">
+                    <Image
                       src={el.thumbnail}
-                      className="h-2/3 overflow-hidden"
+                      // className="h-2/3 overflow-hidden"
+                      height= {100}
+                      loading={"lazy"}
+                      width= {250}
                       style={{
-                        height: "200px",
-                        width: "100%",
                         objectFit: "contain",
                         objectPosition: "top",
                       }}
                       alt="Product image"
                     />
+                    </div>
                     <h2 className="capitalize text-left">{el.name}</h2>
                     <p className="description text-left">
                       {el.description.slice(0, 100)}...

@@ -5,11 +5,14 @@ import Weidgs from "@/Components/Weidgs";
 import { motion } from "framer-motion";
 import { MdLocationOn } from "react-icons/md";
 import { IoCallSharp }from "react-icons/io5";
+import Image from "next/image";
 // import hover3d from "@/utils/hover";
 const AboutMe = () => {
   return (
     <div className="aboutme py-8 relative">
+      
       <Weidgs
+
         customClass={"rightWeidgs"}
         position={{
           right: "15%",
@@ -67,7 +70,9 @@ const AboutMe = () => {
               transition={{ type: "tween", duration: 0.5 }}
               src="https://i.ibb.co/d67c1tF/Dippal-3.jpg"
               alt="Dippal-3"
-              className="md:w-3/5"
+               className="md:w-3/5"
+              // width={400}
+              // height={700}
             />
           </div>
         </div>
