@@ -4,7 +4,7 @@ import React from "react";
 import data from "../../../../../public/projectData";
 import PrimaryButton from "@/Components/PrimaryButton";
 import { usePathname } from "next/navigation";
-const page = ({}) => {
+const page = () => {
   const pathname = usePathname();
   const projectsId = pathname.split("/").pop();
   const singleProject = data.filter((el) => el.id == projectsId);
@@ -19,9 +19,9 @@ const page = ({}) => {
           </p> */}
           <div className="grid md:grid-cols-2 grid-cols-1 gap-3 ">
             {el.images?.map((img, index) => (
-              <div className="aspect-w-1 aspect-h-1">
+              <div className="aspect-w-1 aspect-h-1"key={index}>
                 <img
-                  key={index}
+                  
                   src={img}
                   className="w-4/5 h-[300px] object-contain"
                   alt={`Image ${index}`}

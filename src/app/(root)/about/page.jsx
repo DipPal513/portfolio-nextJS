@@ -66,9 +66,8 @@ const AboutMe = () => {
             </p>
             <PrimaryButton className="" text="Connect" />{" "}
           </div>
-          <div className="px-5 md:px-0"ref={hero}>
+          <div className="px-5 md:px-0" ref={hero}>
             <motion.img
-              
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1 }}
               transition={{ type: "tween", duration: 0.5 }}

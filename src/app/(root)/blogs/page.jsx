@@ -3,10 +3,10 @@ import "../../styles/blog.css";
 const Blogs = () => {
   return (
    <div className="text-center w-full py-24">
-     <button class="pacman-button mx-auto md:scale-150">
-      <span class="button-label">Comming Soon</span>
-      <div class="ghost"></div>
-      <div class="pacman"></div>
+     <button className="pacman-button mx-auto md:scale-150">
+      <span className="button-label">Comming Soon</span>
+      <div className="ghost"></div>
+      <div className="pacman"></div>
     </button>
    </div>
   );
