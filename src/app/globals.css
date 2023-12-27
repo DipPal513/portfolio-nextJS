@@ -141,19 +141,19 @@ body::after{
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #031231;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: var(--main-color);
   border-radius: 5px;
-  box-shadow: 10px 10px 20px 10px;
+  /* box-shadow: 10px 10px 20px 10px; */
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: #003144;
 }
 /* banner text effect */
 .my-name {

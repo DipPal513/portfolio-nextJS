@@ -13,7 +13,7 @@ const Projects = () => {
           "the projects i built with my front end and backend skills"
         }
       />
-      <div className="projects max-w-screen-lg mx-auto md:flex gap-x-5 mt-12 flex-wrap px-3 lg:px-0">
+      <div className="projects max-w-screen-lg mx-auto sm:flex gap-x-5 mt-12 px-3 lg:px-0 items-center justify-center">
         {[
      {
       id: 5,
@@ -104,7 +104,7 @@ const Projects = () => {
         })}
       </div>
       <div className="flex items-center justify-center mt-7">
-        <PrimaryButton text="MOre" link={"/projects/allprojects"} target="" />
+        <PrimaryButton text="MOre" link={"/projects/allprojects"} />
       </div>
     </div>
   );

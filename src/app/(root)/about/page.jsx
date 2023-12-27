@@ -9,7 +9,7 @@ import Image from "next/image";
 // import hover3d from "@/utils/hover";
 const AboutMe = () => {
   return (
-    <div className="aboutme py-8 relative">
+    <div className="aboutme py-8 relative mt-24">
       
       <Weidgs
 
