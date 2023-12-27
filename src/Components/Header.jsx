@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { RiMenu3Fill } from "react-icons/ri";
@@ -14,10 +14,13 @@ const menuVariants = {
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScroll, setIsScroll] = useState(false);
-
-  window.addEventListener("scroll",()=>{
-    window.scrollY > 150 ? setIsScroll(true) : setIsScroll(false);
+useEffect(() => {
+  
+  window?.addEventListener("scroll",()=>{
+    window?.scrollY > 150 ? setIsScroll(true) : setIsScroll(false);
   })
+}, [])
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -56,7 +59,7 @@ const Header = () => {
           variants={menuVariants}
           initial="hidden"
           animate={isMenuOpen ? "visible" : "hidden"}
-          transition={{ type: "tween",duration:1 }}
+          transition={{ type: "tween",duration:.300 }}
         >
           <button
             className="absolute top-5 right-5 text-2xl font-bold p-5 cursor-pointer hover:text-[var(--main-color)] duration-200"
