@@ -115,3 +115,22 @@
     }
   }
    
+
+  /* ---------scroll animation------ */
+
+  .scroll_animation{
+    height: 4px;
+    width: 10%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: red;
+    animation: progress 1s linear
+  }
+  @keyframes progress {
+    to {
+      background-color: rgb(20, 255, 226);
+      width: 100%;
+    }
+  }
+  

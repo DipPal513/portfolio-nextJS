@@ -1,3 +1,16 @@
+import { GrHtml5 } from "react-icons/gr"
+import { PiFileCssBold } from "react-icons/pi";
+import { FaGitAlt, FaReact } from "react-icons/fa6";
+import { TbBrandJavascript, TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
+
+import { FaBootstrap } from "react-icons/fa6";
+import { BiLogoTailwindCss } from "react-icons/bi";
+import { PiFileCssLight } from 'react-icons/pi'
+import { SiExpress, SiJest, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiPostman, SiSvelte } from 'react-icons/si'
+import { FaNode } from 'react-icons/fa'
+import { BsBootstrap, BsGithub } from "react-icons/bs";
+import { VscGithub } from "react-icons/vsc";
+// import { TbBrandNextjs } from "react-icons/tb";
 const projectData = [
   {
     id: 1,
@@ -15,7 +28,7 @@ const projectData = [
     liveLink: "https://simple-gym-website.firebaseapp.com/",
     category: "ecommerce",
     challenges: "User authentication integration, Responsive UI implementation"
-    ,technologies:["react",'firebase',"bootstrap","dynamic routing","private route",'context api','express js',"mongo db",'node js']
+    , technologies: ["react", 'firebase', "bootstrap", "dynamic routing", "private route", 'context api', 'express js', "mongo db", 'node js']
   },
   {
     id: 2,
@@ -33,7 +46,7 @@ const projectData = [
     liveLink: "https://simple-jewelry-website.firebaseapp.com/",
     category: "ecommerce",
     challenges: "Database optimization, Secure payment integration"
-    ,technologies:["react",'firebase',"bootstrap","dynamic routing","private route",'context api','express js',"mongo db",'node js']
+    , technologies: ["react", 'firebase', "bootstrap", "dynamic routing", "private route", 'context api', 'express js', "mongo db", 'node js']
   },
   {
     id: 3,
@@ -51,7 +64,7 @@ const projectData = [
     liveLink: "https://amado-template.netlify.app/",
     category: "ecommerce",
     challenges: "Front-end design, UI/UX optimization"
-    ,technologies:["react","bootstrap","dynamic routing","private route",'context api']
+    , technologies: ["react", "bootstrap", "dynamic routing", "private route", 'context api']
   },
   {
     id: 4,
@@ -69,7 +82,7 @@ const projectData = [
     liveLink: "https://ykjhho.netlify.app/",
     category: "portfolio",
     challenges: "Interactive UI, Project presentation"
-    ,technologies:["react","bootstrap","dynamic routing","private route",'context api']
+    , technologies: ["react", "bootstrap", "dynamic routing", "private route", 'context api']
   },
   {
     id: 5,
@@ -84,7 +97,7 @@ const projectData = [
     liveLink: "https://shopspy-ecommerce-app-reactjs.netlify.app/",
     category: "ecommerce",
     challenges: "Search functionality, "
-    ,technologies:["react",'firebase',"tailwind","dynamic routing","private route",'context api','express js',"mongo db",'node js']
+    , technologies: ["react", 'firebase', "tailwind", "dynamic routing", "private route", 'context api', 'express js', "mongo db", 'node js']
   },
   {
     id: 6,
@@ -100,7 +113,7 @@ const projectData = [
     liveLink: "https://adoring-pare-75c8e3.netlify.app/home",
     category: "service-based",
     challenges: "Service display, Contact integration"
-    ,technologies:["Html","css","javascript"]
+    , technologies: ["Html", "css", "javascript"]
   },
   {
     id: 7,
@@ -115,20 +128,34 @@ const projectData = [
     liveLink: "https://github.com/DipPal513/Evento-Teamplate.git",
     category: "service-based",
     challenges: "Event service presentation, Contact integration"
-    ,technologies:["html",'css','js']
+    , technologies: ["html", 'css', 'js']
   },
   {
     id: 8,
     name: "Clean Portfolio UI",
     description:
       "A minimalistic and clean portfolio UI showcasing projects and skills. It emphasizes simplicity and focuses on highlighting project details.",
-    images: ["https://i.ibb.co/DRcHWLH/practical-goldwasser-a3cc7f-netlify-app.png","https://i.ibb.co/mCVzhdn/practical-goldwasser-a3cc7f-netlify-app-2.png"],
+    images: ["https://i.ibb.co/DRcHWLH/practical-goldwasser-a3cc7f-netlify-app.png", "https://i.ibb.co/mCVzhdn/practical-goldwasser-a3cc7f-netlify-app-2.png"],
     thumbnail: "https://i.ibb.co/PzvS98b/practical-goldwasser-a3cc7f-netlify-app-1.png", // Add the URL for the thumbnail image
     sourceCode: "https://github.com/DipPal513/repositories",
     liveLink: "https://practical-goldwasser-a3cc7f.netlify.app/",
     category: "portfolio",
     challenges: "Minimalistic design, Project display"
-    ,technologies:['html','css','js']
+    , technologies: ['html', 'css', 'js']
+  }
+  ,
+  {
+    id: 8,
+    name: "Admin Dashboard",
+    description:
+      "A clean responsive admin dashboard with raw html and css",
+    images: ["https://i.ibb.co/DRcHWLH/practical-goldwasser-a3cc7f-netlify-app.png", "https://i.ibb.co/mCVzhdn/practical-goldwasser-a3cc7f-netlify-app-2.png"],
+    thumbnail: "https://i.ibb.co/PzvS98b/practical-goldwasser-a3cc7f-netlify-app-1.png", // Add the URL for the thumbnail image
+    sourceCode: "https://github.com/DipPal513/dashboard",
+    liveLink: "https://dippal513.github.io/dashboard/",
+    category: "dashboard",
+    challenges: "Minimalistic design, Project display"
+    , technologies: ['html', 'css']
   }
   // Add more project objects following the same structure...
 ];
@@ -137,56 +164,109 @@ const projectData = [
 const skills_data = [
   {
     name: "HTML 5",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/38/HTML5_Badge.svg",
+    logo: <GrHtml5 />,
+    category: "frontend"
   },
   {
     name: "CSS 3",
-    logo: "https://imgs.search.brave.com/N1hgWKHudLbcpp0RBaetQ76JGZu8Djm_02jt8OagdHo/rs:fit:860:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy82/LzYyL0NTUzNfbG9n/by5zdmc.svg",
+    logo: <PiFileCssLight />,
+    category: "frontend"
+
   },
   {
     name: "Javascript",
-    logo: "https://seeklogo.com/images/J/javascript-js-logo-2949701702-seeklogo.com.png",
+    logo:
+      <TbBrandJavascript />
+    ,
+    category: "frontend"
+
   },
   {
     name: "Tailwind",
-    logo: "https://seeklogo.com/images/T/tailwind-css-logo-5AD4175897-seeklogo.com.png",
+    logo:
+      <BiLogoTailwindCss />
+    ,
+    category: "frontend"
+
   },
   {
     name: "jest",
-    logo:"https://imgs.search.brave.com/qJgP9OO4WaQ19mavzFyXoLFpPl_V6Uohco0FDyafvXs/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9zZWVr/bG9nby5jb20vaW1h/Z2VzL0ovamVzdC1s/b2dvLUY5OTAxRUJC/Rjctc2Vla2xvZ28u/Y29tLnBuZw"
+    logo: <SiJest />,
+    category: "testing"
+
   },
   {
     name: "Bootstrap",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg",
+    logo:
+      <BsBootstrap />,
+    category: "frontend"
+
   },
   {
     name: "React Js",
-    logo: "https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-128.png",
+    logo: <FaReact />,
+    category: "frontend"
+
   },
   {
     name: "Next Js",
-    logo: "https://logowik.com/content/uploads/images/nextjs7685.logowik.com.webp",
+    logo: <TbBrandNextjs />,
+    category: "frontend"
+
   },
   {
     name: "Node Js",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg",
+    logo: < FaNode />,
+    category: "backend"
+
   },
   {
     name: "Express Js",
-    logo: "https://kinsta.com/wp-content/uploads/2022/04/express-1.png",
+    logo: <SiExpress />,
+    category: "backend"
+
+  },
+  {
+    name: "Json web token",
+    logo: <SiJsonwebtokens />,
+    category: "backend"
+
+  },
+  {
+    name: "postman",
+    logo: <SiPostman />,
+    category: "tools"
+
+  },
+  {
+    name: "Vs code",
+    logo: <TbBrandVscode />,
+    category: "tools"
+
   },
   {
     name: "Mongo DB",
-    logo: "https://www.vhv.rs/dpng/d/145-1450243_mongodb-logo-png-transparent-png.png",
+    logo: <SiMongodb />,
+    category: "backend"
+
   },
   {
     name: "Git",
-    logo: "https://raw.githubusercontent.com/detain/svg-logos/master/svg/g/git-icon.svg",
+    logo: <FaGitAlt />,
+    category: "tools"
+
+  },
+  {
+    name: "Svelte Kit",
+    logo: <SiSvelte />,
+    category: "learning"
+
   },
   {
     name: "GitHub",
-    logo: "https://raw.githubusercontent.com/jaywcjlove/logo/master/img/github.svg",
+    logo: <VscGithub />,
+    category: "tools"
   },
 ]
 
-export {projectData,skills_data};
+export { projectData, skills_data };

@@ -28,7 +28,7 @@ const AllProjects = () => {
           >
             All
           </li>
-          {newAllCategory.map((category) => (
+          {newAllCategory?.map((category) => (
             <li
               key={30000 + Math.random(10000000000) / 5}
               onClick={() => setSelectedCategory(category)}

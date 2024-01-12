@@ -7,6 +7,7 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/src/sweetalert2.scss";
+import Head from 'next/head'
 
 const Contact = () => {
   const [isValidEmail, setIsValidEmail] = useState(false);
@@ -42,7 +43,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="contact-section py-10">
+
+   <>
+   <Head>
+            <title>Contact Dip Pal</title>
+            <meta name='description' content="If you are looking for a web developer who can build stunning web app for you then you can contact.." />
+        </Head>
+    
+    <div className="contact pb-5 pt-12">
       <Weidgs
         customClass={
           "leftWeidgs md:w-[400px !important] md:h-[400px !important] w-28 h-28 bg-[var(--main-color)]"
@@ -155,6 +163,7 @@ const Contact = () => {
         </form>
       </div>
     </div>
+   </>
   );
 };
 

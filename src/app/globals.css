@@ -10,6 +10,19 @@
   --background-end-rgb: 255, 255, 255;
 }
 
+
+
+
+/* html {
+  scroll-snap-type: y mandatory;
+} */
+
+
+/* scroll animation */
+/* .projects,.blog,.skills,.contact,.aboutme,.banner,header{
+  scroll-snap-align: start;
+  scroll-snap-stop: always; 
+} */
 @media (prefers-color-scheme: dark) {
   :root {
     --foreground-rgb: 255, 255, 255;
@@ -438,4 +451,10 @@ body::after{
     0 0 15px #2bd2ff,
     0 0 30px #2bd2ff,
     0 0 60px #2bd2ff
+}
+/* skills ------- */
+
+
+.logo svg{
+  stroke-width: 1;
 }

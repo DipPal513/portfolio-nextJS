@@ -2,7 +2,7 @@ import React from "react";
 import {motion} from 'framer-motion';
 const PageHeader = ({ title, description }) => {
   return (
-    <motion.div initial={{opacity:0}}whileInView={{opacity:1}} transition={{duration:1}} className="header  text-left md:text-center mx-auto ">
+    <motion.div initial={{opacity:0,scale:.8}}whileInView={{opacity:1,scale:1}} transition={{duration:.7}} className="header  text-left md:text-center mx-auto ">
       <div className="page-header">
         <div className="text-3xl md:text-6xl flex items-center justify-center gap-x-6">
           <span className="font-bold text-5xl md:text-7xl" style={{color:"rgb(3 27 78)"}}>{"<"}</span>
