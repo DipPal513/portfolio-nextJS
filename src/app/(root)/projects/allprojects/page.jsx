@@ -24,7 +24,7 @@ const AllProjects = () => {
         <ul className="top_category flex item-center ms-auto capitalize gap-x-5 justify-center mb-20 flex-wrap">
           <li
             onClick={() => setSelectedCategory("all")}
-            className={`mb-3 sm:mb-0 cursor-pointer category-item hover:bg-[var(--main-color)] hover:text-black duration-300 border px-5 py-2 `}
+            className={`mb-3 sm:mb-0 cursor-pointer category-item hover:bg-[var(--main-color)] hover:text-black duration-300 border px-5 py-2 rounded-full`}
           >
             All
           </li>
@@ -32,7 +32,7 @@ const AllProjects = () => {
             <li
               key={30000 + Math.random(10000000000) / 5}
               onClick={() => setSelectedCategory(category)}
-              className={`mb-3 sm:mb-0 cursor-pointer category-item hover:bg-[var(--main-color)] hover:text-black duration-300 border px-5 py-2 ${
+              className={`mb-3 sm:mb-0 cursor-pointer category-item hover:bg-[var(--main-color)] rounded-full hover:text-black duration-300 border px-5 py-2 ${
                 selectedCategory === category ? "bg-[var(--main-color)] text-black" : ""
               }`}
             >
@@ -77,7 +77,7 @@ const AllProjects = () => {
                     </p>
                     <div className="tokenInfo">
                       <div className="price">
-                        <p className="text-[var(--main-color)] mb-3 w-12">
+                        <p className="text-[var(--main-color)] mb-3 w-full">
                           {el.category}
                         </p>
                       </div>

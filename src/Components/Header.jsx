@@ -16,17 +16,30 @@ const menuVariants = {
   visible: { left: 0, opacity: 1 },
 };
 
+const headerVariants = {
+  initial: {
+    y: 0,
+    transition: { duration: 0.3, ease: 'easeOut' },
+  },
+  sticky: {
+    y: 48, // Adjust as needed for your header height
+    transition: { duration: 0.3, ease: 'easeOut' },
+  },
+};
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isScroll, setIsScroll] = useState(false);
-  const [isSticky, setSticky] = useState(false);
+  const [isScroll, setIsScroll] = useState(true);
   const { scrollY, scrollYProgress } = useScroll();
+  
+  const headerAnimation = scrollY.get() > 0 ? 'sticky' : 'initial';
 
-  const scale = useTransform(
+
+  const headerY = useTransform(
     scrollYProgress,
-    [0, 0.5, 1],
-    [1, 2, 1] // Scale values at different scroll positions (start, middle, end)
+    [0, 0.2, 0.3],
+    ["0%", "0%", "-100%"]
   );
+  
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -35,10 +48,8 @@ const Header = () => {
   const closeMenu = () => {
     setIsMenuOpen(false);
   };
-  console.log(scale);
-  useEffect(() => {
-    window.scrollY > 50 && setSticky(true)
-  },[])
+  
+
   return (
     <header
       className={`"header" ${
@@ -50,7 +61,9 @@ const Header = () => {
         className="scroll w-4 h-[4px] bg-[var(--main-color)] absolute bottom-0 left-0"
         style={{ scale: scale }}
       ></div> */}
-      <div className={`main-header mx-auto max-w-screen-xl py-7 flex items-center justify-between px-3 ${isSticky && "sticky backdrop-blur-lg w-full top-0 left-0"}`}>
+      <div
+        className={`main-header mx-auto max-w-screen-xl py-7 flex items-center justify-between px-3 `}
+      >
         <motion.div
           initial={{ x: "-100vw" }}
           animate={{ x: 0 }}

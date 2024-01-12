@@ -4,7 +4,8 @@ import './globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Head from 'next/head';
 import { Inter } from 'next/font/google'
-
+import { Suspense } from 'react';
+import Loading from './loading';
 const inter = Inter({
   weight:'400',
   subsets: ['latin'],
@@ -29,10 +30,12 @@ export default function RootLayout({ children }) {
 
       <html lang="en">
         <body suppressHydrationWarning style={{ fontFamily: inter }}>
-          <Header />
+         <Suspense fallback={Loading}>
+         <Header />
           {children} 
           <Footer />
           <SpeedInsights />
+         </Suspense>
         </body>
       </html>
     </>
