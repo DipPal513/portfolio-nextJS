@@ -27,10 +27,6 @@ const ProjectCard = dynamic(() => import("@/Components/ProjectCard"), {
   ),
 });
 
-export const metadata = {
-  title:"All projects of Dip Pal",
-  desctiption:"this is all project page for Dip Pal portfolio"
-}
 const AllProjects = () => {
   const allCategories = [];
   const [selectedCategory, setSelectedCategory] = useState("all");
