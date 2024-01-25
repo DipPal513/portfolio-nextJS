@@ -9,6 +9,10 @@ import Swal from "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/src/sweetalert2.scss";
 
 
+export const metadata = {
+  title:"Contact page of Dip Pal",
+  desctiption:"this is contact page for Dip Pal portfolio"
+}
 const Contact = () => {
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [isClick, setClick] = useState(false);
