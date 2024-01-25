@@ -2,11 +2,10 @@
 import PageHeader from "@/Components/PageHeader";
 import PrimaryButton from "@/Components/PrimaryButton";
 import Weidgs from "@/Components/Weidgs";
-import { motion } from "framer-motion";
 import { MdLocationOn } from "react-icons/md";
 import { IoCallSharp } from "react-icons/io5";
-import Image from "next/image";
-import { useEffect, useState } from "react";
+
+
 // import hover3d from "@/utils/hover";
 
 const AboutMe = () => {
@@ -64,12 +63,12 @@ const AboutMe = () => {
             <PrimaryButton className="" text="Connect" />{" "}
           </div>
           <div className="px-5 md:px-0 h-full w-full">
-            <Image
+            <img
               // placeholder="blur"
               src={"https://i.ibb.co/BwR5ZnZ/Dippal-3.jpg"}
               alt="Dippal-3"
-              height={400}
-              width={300}
+              // height={400}
+              // width={300}
               // loader={"<h2>Loading Image...</h2>"}
               className="" // width={400}
               // height={700}

@@ -1,11 +1,31 @@
 "use client";
-import React, { useState } from "react";
+import { AnimatePresence } from "framer-motion";
+import { useState } from "react";
+import { projectData } from "../../../../../public/projectData";
 import "../../../styles/project.css";
-import {projectData} from "../../../../../public/projectData";
-import Link from "next/link";
-import { AnimatePresence, motion } from "framer-motion";
-import { StyledComponentsConfig } from "next/dist/server/config-shared";
-import Image from "next/image";
+
+import dynamic from "next/dynamic";
+const ProjectCard = dynamic(() => import("@/Components/ProjectCard"), {
+  loading: () => (
+    <div className="border border-blue-200 shadow rounded-md p-4 w-[300px] mx-auto ">
+      <div className="animate-pulse flex flex-col space-y-4">
+        <div className=" bg-slate-700 h-32 w-full"></div>
+        <div className="flex-1 space-y-6 py-1">
+          <div className="h-4 w-1/3 bg-slate-700 rounded"></div>
+          <div className="space-y-3">
+            <div className="grid grid-cols-3 gap-4">
+              <div className="h-2 bg-slate-700 rounded col-span-2"></div>
+              <div className="h-2 bg-slate-700 rounded col-span-1"></div>
+            </div>
+            <div className="h-2 bg-slate-700 rounded"></div>
+            <div className="h-2 bg-slate-700 rounded"></div>
+            <div className="h-6 w-1/3 bg-slate-700 rounded"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  ),
+});
 const AllProjects = () => {
   const allCategories = [];
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -28,12 +48,14 @@ const AllProjects = () => {
           >
             All
           </li>
-          {newAllCategory?.map((category) => (
+          {newAllCategory?.map((category, index) => (
             <li
-              key={30000 + Math.random(10000000000) / 5}
+              key={index}
               onClick={() => setSelectedCategory(category)}
               className={`mb-3 sm:mb-0 cursor-pointer category-item hover:bg-[var(--main-color)] rounded-full hover:text-black duration-300 border px-5 py-2 ${
-                selectedCategory === category ? "bg-[var(--main-color)] text-black" : ""
+                selectedCategory === category
+                  ? "bg-[var(--main-color)] text-black"
+                  : ""
               }`}
             >
               {category}
@@ -42,56 +64,11 @@ const AllProjects = () => {
         </ul>
         <AnimatePresence>
           <div
-            className="flex justify-center flex-wrap gap-y-4 sm:gap-x-4 mx-4 sm:mx-0"
+            className="flex justify-center flex-wrap gap-3 sm:mx-0"
             key={selectedCategory}
           >
-            {filtered?.map((el) => (
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, delay: 0.4 }}
-                exit={{ opacity: 0, scale: 0 }}
-                transition={{ duration: 0.4 }}
-              
-                key={el.id}
-              >
-                <div className="nft">
-                  <div className="main">
-                    {/* Adjust this part to display your product details */}
-                    <div className="overflow-hidden h-[150px]">
-                    <Image
-                      src={el.thumbnail}
-                      // className="h-2/3 overflow-hidden"
-                      height= {100}
-                      loading={"lazy"}
-                      width= {250}
-                      style={{
-                        objectFit: "contain",
-                        objectPosition: "top",
-                      }}
-                      alt="Product image"
-                    />
-                    </div>
-                    <h2 className="capitalize text-left">{el.name}</h2>
-                    <p className="description text-left">
-                      {el.description.slice(0, 100)}...
-                    </p>
-                    <div className="tokenInfo">
-                      <div className="price">
-                        <p className="text-[var(--main-color)] mb-3 w-full">
-                          {el.category}
-                        </p>
-                      </div>
-                      {/* <div className="duration">
-                        <ins>◷</ins>
-                        <p>no</p>
-                      </div> */}
-                    </div>
-                    <button className="w-2/4 py-2 project_details_button">
-                      <Link href={`/projects/${el.id}`}>See Details</Link>
-                    </button>
-                  </div>
-                </div>
-              </motion.div>
+            {filtered?.map((el, index) => (
+              <ProjectCard el={el} index={index} /> 
             ))}
           </div>
         </AnimatePresence>

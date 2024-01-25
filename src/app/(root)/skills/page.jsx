@@ -5,6 +5,7 @@ import Image from "next/image";
 import { skills_data } from "../../../../public/projectData";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Skill from "@/Components/Skill";
 const Skills = () => {
   const [data, setData] = useState(skills_data);
   const handleSkillsCategory = (category) => {
@@ -50,20 +51,7 @@ const Skills = () => {
         <div className="skills-hub flex mt-4 flex-wrap items-center justify-center gap-x-4 py-5">
           <ul className="flex items-center justify-center flex-wrap">
             {data?.map((el, index) => {
-              return (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1, delay: 0.4 }}
-                  exit={{ opacity: 0, scale: 0 }}
-                  transition={{ duration: 0.4 }}
-                  className="flex-col items-center justify-center p-3"
-                  key={el.name}
-                >
-                  <div className="logo text-[#00e3ff] text-6xl">{el.logo}</div>
-
-                  <h3 className="logo_tolltip  uppercase mt-2">{el.name}</h3>
-                </motion.div>
-              );
+              return <Skill el={el} key={index} />;
             })}
           </ul>
         </div>

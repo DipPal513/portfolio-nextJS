@@ -7,11 +7,12 @@ import { useForm } from "react-hook-form";
 import emailjs from "@emailjs/browser";
 import Swal from "sweetalert2/dist/sweetalert2.js";
 import "sweetalert2/src/sweetalert2.scss";
-import Head from 'next/head'
+
 
 const Contact = () => {
   const [isValidEmail, setIsValidEmail] = useState(false);
   const [isClick, setClick] = useState(false);
+
   const {
     register,
     handleSubmit,
@@ -27,6 +28,7 @@ const Contact = () => {
     reset();
     setIsValidEmail(false); // Reset email validation state
 
+    // email js setup
     emailjs.send(
       "service_3ybke42",
       "template_v8bsu1m",
@@ -34,6 +36,7 @@ const Contact = () => {
       "Fo9Ub2oH2KVZCh_n5"
     );
 
+    // success message
     Swal.fire({
       title: "Success",
       text: "Thank you for your message",
@@ -45,12 +48,9 @@ const Contact = () => {
   return (
 
    <>
-   <Head>
-            <title>Contact Dip Pal</title>
-            <meta name='description' content="If you are looking for a web developer who can build stunning web app for you then you can contact.." />
-        </Head>
+
     
-    <div className="contact pb-5 pt-12">
+    <section className="contact pb-5 pt-12 h-screen">
       <Weidgs
         customClass={
           "leftWeidgs md:w-[400px !important] md:h-[400px !important] w-28 h-28 bg-[var(--main-color)]"
@@ -162,7 +162,7 @@ const Contact = () => {
           </div>
         </form>
       </div>
-    </div>
+    </section>
    </>
   );
 };

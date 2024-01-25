@@ -19,7 +19,7 @@ const ProjectDetails = () => {
             {el.description}
           </p> */}
           <div className="grid md:grid-cols-2 grid-cols-1 gap-3 ">
-            {el.images?.map((img, index) => (
+            {el.images?.slice(0,1).map((img, index) => (
               <div className=" overflow-scroll bg-transparent overflow-x-hidden h-[50vh]"key={index}>
                 <Image
                   width={400}

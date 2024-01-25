@@ -14,23 +14,12 @@ const Banner = () => {
   };
 
   return (
-    <div
-      className="banner flex items-center justify-center flex-col py-5 h-[80vh] space-y-9 text-center relative"
-      onMouseMove={(e) => updateCursorPosition(e)}
-
-      // style={{
-      //   background:
-      //     "linear-gradient(to right,rgba(245,245,245,.8),rgba(245,245,245,.8)),url(https://d33wubrfki0l68.cloudfront.net/daac8858fd4a0ccea44f59dfd079c3c16c263f33/c157c/assets/svg/common-bg.svg)",
-      //   backgroundPosition: "center",
-
-      //   position: "relative",
-      // }}
-    >
+    <div className="banner flex items-center justify-center flex-col py-5 h-[80vh] space-y-9 text-center relative">
       <Weidgs
         customClass={"leftWeidgs"}
         position={{
-          left: 0 + (cursorPos.y / 5 + 10),
-          top: 20 + cursorPos.x / 5,
+          left: 100,
+          top: 100,
         }}
         animate={{ background: "red" }}
       ></Weidgs>
@@ -39,7 +28,7 @@ const Banner = () => {
         customClass={"rightWeidgs"}
         position={{
           right: "30%",
-          top: 20 + cursorPos.y / 5,
+          top: 30,
           background: "magenta",
           borderRadius: "50%",
           width: "150px",
@@ -48,7 +37,7 @@ const Banner = () => {
       ></Weidgs>
       <Weidgs
         customclassName={"rightWeidgs"}
-        position={{ right: "10%", top: "80%", marginLeft: `${cursorPos.x}` }}
+        position={{ right: "10%", top: "80%", marginLeft: `10%` }}
       ></Weidgs>
 
       <div className="content">
