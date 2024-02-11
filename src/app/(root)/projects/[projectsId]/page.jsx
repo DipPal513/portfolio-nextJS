@@ -57,9 +57,15 @@ const ProjectDetails = () => {
                 target={"_blank"}
               />
               <PrimaryButton
-                text={"Code Link"}
-                link={el.sourceCode}
+                text={"frontend"}
+                link={el.sourceCode.frontend}
                 target={"_blank"}
+              />
+              <PrimaryButton
+                text={"backend"}
+                link={el.sourceCode.backend}
+                target={"_blank"}
+                disabled={el.sourceCode.backend == ""}
               />
             </div>
           </div>

@@ -107,7 +107,7 @@ const Header = () => {
                 key={index}
                 className="uppercase mb-10 md:mb-0 py-1 md:py-5 text-center"
                 onClick={closeMenu}
-                whileHover={{ scale: 1.1 }}
+                whileHover={{ scale: 0.9 }}
               >
                 <Link href={el === "home" ? "/" : `/${el}`}>
                   <span>{el}</span>
