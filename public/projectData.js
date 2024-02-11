@@ -15,7 +15,7 @@ const projectData = [
   {
     id: 9999,
     name: "TruthGate - Social media app",
-    description: "A social media application in mern stack",
+    description: "A social media application in mern stack, I have taken help from youtube to build some rest api i learnt those and in building frontend i faced much problem handling state then i start using redux, i like the single source of all state feature of it...I have done the goal of truthgate 1.0 that i taken now i will work for it 2.0 features",
     images: ["https://i.ibb.co/prpSVQc/truthgate-vercel-app-user-65c4d214a16bd8ad49e81e80.png",
     "https://i.ibb.co/30RnSkr/truthgate-vercel-app-login-2.png",
     "https://i.ibb.co/6vbBHzH/truthgate-vercel-app-login-1.png"],
