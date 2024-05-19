@@ -62,22 +62,22 @@ const Banner = () => {
       </motion.h4>
 
       <p className="text-xl text-white font-semibold px-4 md:px-0 md:w-3/6 mt-5">
-        A Full-Stack Web Developer building the Websites and Web Applications
+        A Front-End Web Developer building the Websites and Web Applications
         that leads to the success of the overall product
       </p>
       {/* <button className="main-button">Projects</button> */}
       <div className="flex items-center gap-x-2 md:gap-x-5">
         <PrimaryButton
-          text="Resume"
+          text="Linkedin"
           customclassName={"m-[0 !important]"}
           link={
-            "https://drive.google.com/file/d/1CuVsby_PSNJhp8gTUWZ2hp89_6cSeKAz/view?usp=sharing"
+            "https://www.linkedin.com/in/dippal513/"
           }
           target="_blank"
         />
         <PrimaryButton
-          text="Hire"
-          link="https://www.linkedin.com/in/dippal513/"
+          text="Github"
+          link="https://www.github.com/dippal513"
           target="_blank"
         />
       </div>
