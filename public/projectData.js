@@ -13,6 +13,21 @@ import { VscGithub } from "react-icons/vsc";
 // import { TbBrandNextjs } from "react-icons/tb";
 const projectData = [
   {
+    id: 99449,
+    name: "Department of Dance, Dhaka University",
+    description: "The Department of Dance at the University of Dhaka offers undergraduate and postgraduate programs, focusing on both theoretical and practical aspects of dance. The website features sections on faculty, office staff, research areas, current research, and recent publications. It also highlights co-curricular activities like the debating club and blood donation, along with news and upcoming events.",
+    images: [],
+    thumbnail: "https://i.ibb.co/Mhnj74G/dance.png",
+    sourceCode: {
+      frontend: "",
+      backend: ""
+    },
+    liveLink: "https://dance.du.ac.bd",
+    category: "organizational",
+    challenges: "",
+    technologies: ["next js","tailwind",]
+  },
+  {
     id: 9999,
     name: "TruthGate - Social media app",
     description: "A social media application in mern stack, I have taken help from youtube to build some rest api i learnt those and in building frontend i faced much problem handling state then i start using redux, i like the single source of all state feature of it...I have done the goal of truthgate 1.0 that i taken now i will work for it 2.0 features",
@@ -26,7 +41,7 @@ const projectData = [
     },
     liveLink: "https://truthgate.vercel.app",
     category: "social media",
-    challenges: "t first, I struggled with keeping track of states, but diving into Redux helped me solve the problem. Then, I ran into an issue with cookies, which I thought was my browser's fault. However, exploring cookie properties for the first time taught me a lot.",
+    challenges: "At first, I struggled with keeping track of states, but diving into Redux helped me solve the problem. Then, I ran into an issue with cookies, which I thought was my browser's fault. However, exploring cookie properties for the first time taught me a lot.",
     technologies: ["react", "redux","tailwind","shadcn", "express js", "mongo DB"]
   },
   {
