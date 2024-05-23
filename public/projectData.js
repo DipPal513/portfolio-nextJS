@@ -16,7 +16,7 @@ const projectData = [
     id: 99449,
     name: "Department of Dance, Dhaka University",
     description: "The Department of Dance at the University of Dhaka offers undergraduate and postgraduate programs, focusing on both theoretical and practical aspects of dance. The website features sections on faculty, office staff, research areas, current research, and recent publications. It also highlights co-curricular activities like the debating club and blood donation, along with news and upcoming events.",
-    images: [],
+    images: ["https://i.ibb.co/Mhnj74G/dance.png",],
     thumbnail: "https://i.ibb.co/Mhnj74G/dance.png",
     sourceCode: {
       frontend: "",
