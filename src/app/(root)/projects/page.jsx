@@ -38,7 +38,7 @@ const Projects = () => {
           "the projects i built with my front end and backend skills"
         }
       />
-      <div className="projects max-w-screen-lg mx-auto sm:flex gap-x-5 mt-12 px-3 lg:px-0 items-center justify-center">
+      <div className="projects max-w-screen-lg mx-auto sm:flex gap-x-5 justify-center mt-12 px-3 lg:px-0 ">
         {projectData.slice(0, 3).map((data, index) => {
           return <Project data={data} index={index} key={index} />;
         })}

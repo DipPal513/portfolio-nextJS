@@ -458,3 +458,9 @@ body::after{
 .logo svg{
   stroke-width: 1;
 }
+
+/* ---------- */
+.is-hidden{
+  visibility: visible !important;
+  
+}

@@ -1,5 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 function ProjectCard({ el }) {
   return (
@@ -13,7 +14,7 @@ function ProjectCard({ el }) {
         <div className="main">
           {/* Adjust this part to display your product details */}
           <div className="overflow-hidden h-[150px]">
-            <img
+            <Image
               src={el.thumbnail}
               // className="h-2/3 overflow-hidden"
               height={100}
@@ -27,8 +28,8 @@ function ProjectCard({ el }) {
             />
           </div>
           <h2 className="capitalize text-left">{el.name}</h2>
-          <p className="description text-left">
-            {el.description.slice(0, 100)}...
+          <p className="description text-left line-clamp-3">
+            {el.description}
           </p>
           <div className="tokenInfo">
             <div className="price">
@@ -38,9 +39,7 @@ function ProjectCard({ el }) {
             </div>
           </div>
           <button className="w-2/4 py-2 project_details_button">
-            <Link href={`/projects/${el.id}`}>
-              See Details
-            </Link>
+            <Link href={`/projects/${el.id}`}>See Details</Link>
           </button>
         </div>
       </div>

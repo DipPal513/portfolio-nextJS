@@ -8,7 +8,7 @@
   -webkit-backdrop-filter: blur(7px);
   overflow: hidden;
   transition: .5s all;
-  
+  height: auto;
 }
 
 .nft hr {

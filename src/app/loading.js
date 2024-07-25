@@ -3,7 +3,8 @@ import React from 'react'
 import "./styles/loading.css"
 const Loading = () => {
   return (
-    <div aria-label="Orange and tan hamster running in a metal wheel" role="img" className="wheel-and-hamster mx-auto">
+  <div className="h-[50vh] flex items-center justify-center">
+      <div aria-label="Orange and tan hamster running in a metal wheel" role="img" className="wheel-and-hamster mx-auto">
       <div className="wheel"></div>
       <div className="hamster">
         <div className="hamster__body">
@@ -21,6 +22,7 @@ const Loading = () => {
       </div>
       <div className="spoke"></div>
     </div>
+  </div>
   )
 }
 

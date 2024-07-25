@@ -16,11 +16,11 @@ export default function Project({ data, index }) {
             blurDataURL="image thumbnail"
           />
         </div>
-        <h2 className="capitalize">{data.name}</h2>
-        <p className="description">{data.description.slice(0, 100)}...</p>
+        <h2 className="capitalize font-bold text-xl">{data.name}</h2>
+        <p className="description line-clamp-3">{data.description}</p>
         <div className="tokenInfo">
           <div className="price">
-            <p className="text-[var(--main-color)]">{data.category}</p>
+            <p className="text-[var(--main-color)] mb-2">#{data.category}</p>
           </div>
         </div>
 

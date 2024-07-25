@@ -13,6 +13,36 @@ import { VscGithub } from "react-icons/vsc";
 // import { TbBrandNextjs } from "react-icons/tb";
 const projectData = [
   {
+    id: 3243,
+    name: "VASHA",
+    description: "I've recently completed a website named CEIL that is designed to organize hackathons efficiently. CEIL offers a range of features, including seamless contest registration, allowing participants to sign up easily for various hackathons. It also includes a blog section where users can read and contribute articles, a tutorial section for educational content to help users improve their skills, and a team registration feature to facilitate the formation and management of teams. These functionalities ensure a comprehensive and user-friendly experience for organizing and participating in hackathons.",
+    images: ["",],
+    thumbnail: "",
+    sourceCode: {
+      frontend: "",
+      backend: ""
+    },
+    liveLink: "https://vasha.com.bd/",
+    category: "tech",
+    challenges: "",
+    technologies: ["next js","tailwind",]
+  },
+  {
+    id: 3243,
+    name: "Agrashor Newspaper",
+    description: "...",
+    images: ["",],
+    thumbnail: "",
+    sourceCode: {
+      frontend: "",
+      backend: ""
+    },
+    liveLink: "https://agrasor.com/",
+    category: "News",
+    challenges: "",
+    technologies: ["next js","tailwind",]
+  },
+  {
     id: 99449,
     name: "Department of Dance, Dhaka University",
     description: "The Department of Dance at the University of Dhaka offers undergraduate and postgraduate programs, focusing on both theoretical and practical aspects of dance. The website features sections on faculty, office staff, research areas, current research, and recent publications. It also highlights co-curricular activities like the debating club and blood donation, along with news and upcoming events.",
