@@ -25,12 +25,12 @@ const projectData = [
     liveLink: "https://vasha.com.bd/",
     category: "tech",
     challenges: "",
-    technologies: ["next js","tailwind",]
+    technologies: ["react js","tailwind",]
   },
   {
     id: 3243,
     name: "Agrashor Newspaper",
-    description: "...",
+    description: ""Agrasor" is a cutting-edge Bangla newspaper website designed to deliver the latest news and updates in a user-friendly format. Featuring comprehensive coverage of local and international news, politics, sports, entertainment, and more, Agrasor ensures readers stay informed and engaged. With its sleek design and intuitive navigation, accessing articles and breaking news is seamless. The website also offers interactive features, including comment sections and social media integration, fostering a vibrant community of readers. Agrasor is committed to providing accurate and timely news to the Bangla-speaking audience, making it a reliable source for daily information.",
     images: ["",],
     thumbnail: "",
     sourceCode: {
