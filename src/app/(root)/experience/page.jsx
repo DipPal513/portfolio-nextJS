@@ -23,7 +23,7 @@ const JobExperience = () => {
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<FaBriefcase />}
         >
-          <h3 className="vertical-timeline-element-title">Intern Frontend Developer</h3>
+          <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">ANCOVA SOFTWARE</h4>
           <p>
             Working on developing and maintaining web applications with React, Next.js, and Redux. Worked new features and optimize performance.
@@ -38,7 +38,7 @@ const JobExperience = () => {
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<FaBriefcase />}
         >
-          <h3 className="vertical-timeline-element-title">Frontend Developer</h3>
+          <h3 className="vertical-timeline-element-title">Intern Frontend Developer</h3>
           <h4 className="vertical-timeline-element-subtitle">ANCOVA SOFTWARE</h4>
           <p>
             Developed and maintained the frontend of several web applications using React, Redux and Next Js. Collaborated closely with designers and backend developers to deliver high-quality products.
