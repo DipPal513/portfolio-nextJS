@@ -6,7 +6,7 @@ import { TbBrandJavascript, TbBrandNextjs, TbBrandVscode } from "react-icons/tb"
 import { FaBootstrap } from "react-icons/fa6";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { PiFileCssLight } from 'react-icons/pi'
-import { SiExpress, SiJest, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiPostman, SiSvelte } from 'react-icons/si'
+import { SiExpress, SiJest, SiJsonwebtokens, SiMongodb, SiNextdotjs, SiPhp, SiPostman, SiSvelte } from 'react-icons/si'
 import { FaNode } from 'react-icons/fa'
 import { BsBootstrap, BsGithub } from "react-icons/bs";
 import { VscGithub } from "react-icons/vsc";
@@ -30,7 +30,7 @@ const projectData = [
   {
     id: 3243,
     name: "Agrashor Newspaper",
-    description: ""Agrasor" is a cutting-edge Bangla newspaper website designed to deliver the latest news and updates in a user-friendly format. Featuring comprehensive coverage of local and international news, politics, sports, entertainment, and more, Agrasor ensures readers stay informed and engaged. With its sleek design and intuitive navigation, accessing articles and breaking news is seamless. The website also offers interactive features, including comment sections and social media integration, fostering a vibrant community of readers. Agrasor is committed to providing accurate and timely news to the Bangla-speaking audience, making it a reliable source for daily information.",
+    description: "Agrasor is a cutting-edge Bangla newspaper website designed to deliver the latest news and updates in a user-friendly format. Featuring comprehensive coverage of local and international news, politics, sports, entertainment, and more, Agrasor ensures readers stay informed and engaged. With its sleek design and intuitive navigation, accessing articles and breaking news is seamless. The website also offers interactive features, including comment sections and social media integration, fostering a vibrant community of readers. Agrasor is committed to providing accurate and timely news to the Bangla-speaking audience, making it a reliable source for daily information.",
     images: ["",],
     thumbnail: "",
     sourceCode: {
@@ -271,7 +271,7 @@ const skills_data = [
   {
     name: "Next Js",
     logo: <TbBrandNextjs />,
-    category: "learning"
+    category: "frontend"
 
   },
   {
@@ -316,7 +316,11 @@ const skills_data = [
     category: "tools"
 
   },
-  
+  {
+    name: "php",
+    logo: <SiPhp />,
+    category: "backend"
+  },
   {
     name: "GitHub",
     logo: <VscGithub />,
