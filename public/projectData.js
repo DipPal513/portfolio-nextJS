@@ -14,6 +14,21 @@ import { VscGithub } from "react-icons/vsc";
 const projectData = [
   {
     id: 3243,
+    name: "Anit - Dimensional",
+    description: `The website "Boishommobirodhi Chatro Andolon" is dedicated to the quota reform movement in Bangladesh, a significant student-led initiative that sought to address and eliminate discrimination in the public job quota system. The design reflects the seriousness and importance of the movement, using a professional and accessible layout to engage its audience.At the top of the page, users are presented with a clear and straightforward interface where they can submit information about individuals who are injured, deceased, or missing due to their involvement in the movement. This feature underscores the website's role in gathering and documenting critical information, ensuring that the voices and needs of those affected are heard and addressed."Boishommobirodhi Chatro Andolon" serves as an important platform for both information dissemination and support, providing a digital space for the ongoing struggle against inequality in the public job sector of Bangladesh. The website not only honors the sacrifices of those involved in the movement but also continues to advocate for change by enabling community engagement and awareness.`,
+    images: ["",],
+    thumbnail: "/images/anti-dimensional.png",
+    sourceCode: {
+      frontend: "",
+      backend: ""
+    },
+    liveLink: "https://stunning-macaron-608926.netlify.app/stunning-macaron-",
+    category: "organizational",
+    challenges: "",
+    technologies: ["html","jQuery","tailwind",]
+  },
+  {
+    id: 3243,
     name: "VASHA",
     description: "I've recently completed a website named CEIL that is designed to organize hackathons efficiently. CEIL offers a range of features, including seamless contest registration, allowing participants to sign up easily for various hackathons. It also includes a blog section where users can read and contribute articles, a tutorial section for educational content to help users improve their skills, and a team registration feature to facilitate the formation and management of teams. These functionalities ensure a comprehensive and user-friendly experience for organizing and participating in hackathons.",
     images: ["",],
@@ -249,12 +264,12 @@ const skills_data = [
     category: "frontend"
 
   },
-  {
-    name: "jest",
-    logo: <SiJest />,
-    category: "testing"
+  // {
+  //   name: "jest",
+  //   logo: <SiJest />,
+  //   category: "testing"
 
-  },
+  // },
   {
     name: "Bootstrap",
     logo:
@@ -319,7 +334,7 @@ const skills_data = [
   {
     name: "php",
     logo: <SiPhp />,
-    category: "backend"
+    category: "learning"
   },
   {
     name: "GitHub",
