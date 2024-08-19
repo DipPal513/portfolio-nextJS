@@ -17,12 +17,12 @@ const projectData = [
     name: "Anti - Dimensional",
     description: `The website "Boishommobirodhi Chatro Andolon" is dedicated to the quota reform movement in Bangladesh, a significant student-led initiative that sought to address and eliminate discrimination in the public job quota system. The design reflects the seriousness and importance of the movement, using a professional and accessible layout to engage its audience.At the top of the page, users are presented with a clear and straightforward interface where they can submit information about individuals who are injured, deceased, or missing due to their involvement in the movement. This feature underscores the website's role in gathering and documenting critical information, ensuring that the voices and needs of those affected are heard and addressed."Boishommobirodhi Chatro Andolon" serves as an important platform for both information dissemination and support, providing a digital space for the ongoing struggle against inequality in the public job sector of Bangladesh. The website not only honors the sacrifices of those involved in the movement but also continues to advocate for change by enabling community engagement and awareness.`,
     images: ["",],
-    thumbnail: "/images/anti_dimensional.png",
+    thumbnail: "https://i.ibb.co/CvGXSzk/anti-dimensional.png",
     sourceCode: {
       frontend: "",
       backend: ""
     },
-    liveLink: "https://stunning-macaron-608926.netlify.app/stunning-macaron-",
+    liveLink: "https://stunning-macaron-608926.netlify.app/",
     category: "organizational",
     challenges: "",
     technologies: ["html","jQuery","tailwind",]
