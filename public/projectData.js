@@ -13,7 +13,23 @@ import { VscGithub } from "react-icons/vsc";
 // import { TbBrandNextjs } from "react-icons/tb";
 const projectData = [
   {
-    id: 3243,
+    id: 3277,
+    name: "Willro",
+    description: `Willro is an online review platform where consumers share feedback on businesses and products. It allows users to post reviews, helping others make informed decisions. Businesses can claim their profiles, respond to reviews, and display ratings. Willro uses a 5-star rating system, which generates a company’s overall TrustScore.
+
+It's an open platform**, meaning anyone can leave a review, and businesses can't delete negative reviews unless they violate guidelines. Willro also offers paid features for businesses like review analytics and integration tools. While it's transparent, there are challenges like fake reviews, but the platform actively works to mitigate this. It operates globally in multiple languages.`,
+    images: ["https://i.ibb.co.com/m0FJNt4/willro-com-2.png",],
+    thumbnail: "https://i.ibb.co.com/m0FJNt4/willro-com-2.png",
+    sourceCode: {
+      frontend: "https://github.com/DipPal513/trustpilot-x",
+      backend: "https://github.com/DipPal513/trustpilot-x"
+    },
+    liveLink: "https://willro.com",
+    category: "Business",
+    challenges: "",
+    technologies: ["Next Js","Tailwind","Express Js","Mongo DB","antd"]
+  },
+   { id: 3243,
     name: "Anti - Dimensional",
     description: `The website "Boishommobirodhi Chatro Andolon" is dedicated to the quota reform movement in Bangladesh, a significant student-led initiative that sought to address and eliminate discrimination in the public job quota system. The design reflects the seriousness and importance of the movement, using a professional and accessible layout to engage its audience.At the top of the page, users are presented with a clear and straightforward interface where they can submit information about individuals who are injured, deceased, or missing due to their involvement in the movement. This feature underscores the website's role in gathering and documenting critical information, ensuring that the voices and needs of those affected are heard and addressed."Boishommobirodhi Chatro Andolon" serves as an important platform for both information dissemination and support, providing a digital space for the ongoing struggle against inequality in the public job sector of Bangladesh. The website not only honors the sacrifices of those involved in the movement but also continues to advocate for change by enabling community engagement and awareness.`,
     images: ["",],
