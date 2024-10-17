@@ -347,11 +347,7 @@ const skills_data = [
     category: "tools"
 
   },
-  {
-    name: "php",
-    logo: <SiPhp />,
-    category: "learning"
-  },
+  
   {
     name: "GitHub",
     logo: <VscGithub />,

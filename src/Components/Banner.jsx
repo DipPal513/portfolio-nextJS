@@ -62,7 +62,7 @@ const Banner = () => {
       </motion.h4>
 
       <p className="text-xl text-white font-semibold px-4 md:px-0 md:w-3/6 mt-5">
-        A Front-End Web Developer building the Websites and Web Applications
+        A FullStack Web Developer building the Websites and Web Applications
         that leads to the success of the overall product
       </p>
       {/* <button className="main-button">Projects</button> */}

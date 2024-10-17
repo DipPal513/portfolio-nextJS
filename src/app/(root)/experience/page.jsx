@@ -19,7 +19,7 @@ const JobExperience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
-          date="01 May 2024 - 01 August 2024"
+          date="01 August 2024 -  Present"
           iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
           icon={<FaBriefcase />}
         >
@@ -34,7 +34,7 @@ const JobExperience = () => {
           className="vertical-timeline-element--work"
           contentStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(233, 30, 99)' }}
-          date="01 August 2024 - present"
+          date="01 May 2024 - 01 Aug 2024"
           iconStyle={{ background: 'rgb(233, 30, 99)', color: '#fff' }}
           icon={<FaBriefcase />}
         >
