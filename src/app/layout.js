@@ -2,6 +2,7 @@ import Footer from '@/Components/Footer';
 import Header from '@/Components/Header';
 import './globals.css';
 import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
 import Head from 'next/head';
 import { Inter } from 'next/font/google'
 import { Suspense } from 'react';
@@ -35,6 +36,7 @@ export default function RootLayout({ children }) {
           {children} 
           <Footer />
           <SpeedInsights />
+          <Analytics />
          </Suspense>
         </body>
       </html>
