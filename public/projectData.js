@@ -2,7 +2,6 @@ import { GrHtml5 } from "react-icons/gr"
 import { PiFileCssBold } from "react-icons/pi";
 import { FaGitAlt, FaReact } from "react-icons/fa6";
 import { TbBrandJavascript, TbBrandNextjs, TbBrandVscode } from "react-icons/tb";
-
 import { FaBootstrap } from "react-icons/fa6";
 import { BiLogoTailwindCss } from "react-icons/bi";
 import { PiFileCssLight } from 'react-icons/pi'
@@ -12,6 +11,21 @@ import { BsBootstrap, BsGithub } from "react-icons/bs";
 import { VscGithub } from "react-icons/vsc";
 // import { TbBrandNextjs } from "react-icons/tb";
 const projectData = [
+  {
+    id: 99449,
+    name: "Department of Dance, Dhaka University",
+    description: "The Department of Dance at the University of Dhaka offers undergraduate and postgraduate programs, focusing on both theoretical and practical aspects of dance. The website features sections on faculty, office staff, research areas, current research, and recent publications. It also highlights co-curricular activities like the debating club and blood donation, along with news and upcoming events.",
+    images: ["https://i.ibb.co/Mhnj74G/dance.png",],
+    thumbnail: "https://i.ibb.co/Mhnj74G/dance.png",
+    sourceCode: {
+      frontend: "",
+      backend: ""
+    },
+    liveLink: "https://dance.du.ac.bd",
+    category: "organizational",
+    challenges: "",
+    technologies: ["next js", "tailwind",]
+  },
   {
     id: 3277,
     name: "Willro",
@@ -27,9 +41,10 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
     liveLink: "https://willro.com",
     category: "Business",
     challenges: "",
-    technologies: ["Next Js","Tailwind","Express Js","Mongo DB","antd"]
+    technologies: ["Next Js", "Tailwind", "Express Js", "Mongo DB", "antd"]
   },
-   { id: 3243,
+  {
+    id: 3243,
     name: "Anti - Dimensional",
     description: `The website "Boishommobirodhi Chatro Andolon" is dedicated to the quota reform movement in Bangladesh, a significant student-led initiative that sought to address and eliminate discrimination in the public job quota system. The design reflects the seriousness and importance of the movement, using a professional and accessible layout to engage its audience.At the top of the page, users are presented with a clear and straightforward interface where they can submit information about individuals who are injured, deceased, or missing due to their involvement in the movement. This feature underscores the website's role in gathering and documenting critical information, ensuring that the voices and needs of those affected are heard and addressed."Boishommobirodhi Chatro Andolon" serves as an important platform for both information dissemination and support, providing a digital space for the ongoing struggle against inequality in the public job sector of Bangladesh. The website not only honors the sacrifices of those involved in the movement but also continues to advocate for change by enabling community engagement and awareness.`,
     images: ["",],
@@ -41,7 +56,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
     liveLink: "https://stunning-macaron-608926.netlify.app/",
     category: "organizational",
     challenges: "",
-    technologies: ["html","jQuery","tailwind",]
+    technologies: ["html", "jQuery", "tailwind",]
   },
   {
     id: 3243,
@@ -56,7 +71,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
     liveLink: "https://vasha.com.bd/",
     category: "tech",
     challenges: "",
-    technologies: ["react js","tailwind",]
+    technologies: ["react js", "tailwind",]
   },
   {
     id: 3243,
@@ -71,30 +86,16 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
     liveLink: "https://agrasor.com/",
     category: "News",
     challenges: "",
-    technologies: ["next js","tailwind",]
+    technologies: ["next js", "tailwind",]
   },
-  {
-    id: 99449,
-    name: "Department of Dance, Dhaka University",
-    description: "The Department of Dance at the University of Dhaka offers undergraduate and postgraduate programs, focusing on both theoretical and practical aspects of dance. The website features sections on faculty, office staff, research areas, current research, and recent publications. It also highlights co-curricular activities like the debating club and blood donation, along with news and upcoming events.",
-    images: ["https://i.ibb.co/Mhnj74G/dance.png",],
-    thumbnail: "https://i.ibb.co/Mhnj74G/dance.png",
-    sourceCode: {
-      frontend: "",
-      backend: ""
-    },
-    liveLink: "https://dance.du.ac.bd",
-    category: "organizational",
-    challenges: "",
-    technologies: ["next js","tailwind",]
-  },
+  
   {
     id: 9999,
     name: "TruthGate - Social media app",
     description: "A social media application in mern stack, I have taken help from youtube to build some rest api i learnt those and in building frontend i faced much problem handling state then i start using redux, i like the single source of all state feature of it...I have done the goal of truthgate 1.0 that i taken now i will work for it 2.0 features",
     images: ["https://i.ibb.co/prpSVQc/truthgate-vercel-app-user-65c4d214a16bd8ad49e81e80.png",
-    "https://i.ibb.co/30RnSkr/truthgate-vercel-app-login-2.png",
-    "https://i.ibb.co/6vbBHzH/truthgate-vercel-app-login-1.png"],
+      "https://i.ibb.co/30RnSkr/truthgate-vercel-app-login-2.png",
+      "https://i.ibb.co/6vbBHzH/truthgate-vercel-app-login-1.png"],
     thumbnail: "https://i.ibb.co/prpSVQc/truthgate-vercel-app-user-65c4d214a16bd8ad49e81e80.png",
     sourceCode: {
       frontend: "https://github.com/DipPal513/truthGate_frontend",
@@ -103,7 +104,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
     liveLink: "https://truthgate.vercel.app",
     category: "social media",
     challenges: "At first, I struggled with keeping track of states, but diving into Redux helped me solve the problem. Then, I ran into an issue with cookies, which I thought was my browser's fault. However, exploring cookie properties for the first time taught me a lot.",
-    technologies: ["react", "redux","tailwind","shadcn", "express js", "mongo DB"]
+    technologies: ["react", "redux", "tailwind", "shadcn", "express js", "mongo DB"]
   },
   {
     id: 5,
@@ -113,7 +114,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
     images: ["https://i.ibb.co/k33nnsD/shopspy-ecommerce-app-reactjs-netlify-app.png",
       'https://i.ibb.co/LCK4L1g/shopspy-ecommerce-app-reactjs-netlify-app-2.png'],
     thumbnail: "https://i.ibb.co/k33nnsD/shopspy-ecommerce-app-reactjs-netlify-app.png",
-    sourceCode: { frontend: "https://github.com/DipPal513/shopspy_ecommerce",backend:"https://github.com/DipPal513/shopspy_eccomerce_backend" },
+    sourceCode: { frontend: "https://github.com/DipPal513/shopspy_ecommerce", backend: "https://github.com/DipPal513/shopspy_eccomerce_backend" },
     liveLink: "https://shopspy-ecommerce-app-reactjs.netlify.app/",
     category: "ecommerce",
     challenges: "I have faced little bit challange in some ecommerce based logic and managing states like in cart and little things but i learned a lot."
@@ -131,7 +132,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
       "https://i.ibb.co/RCcKmyr/furniture-4.png"
     ],
     thumbnail: "https://i.ibb.co/FYNBWbP/furniture-1.png",
-    sourceCode:{frontend: "https://github.com/DipPal513/Amad-website",backend:""},
+    sourceCode: { frontend: "https://github.com/DipPal513/Amad-website", backend: "" },
     liveLink: "https://amado-template.netlify.app/",
     category: "ecommerce",
     challenges: "Front-end design, UI/UX optimization"
@@ -149,7 +150,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
       "https://i.ibb.co/P9wrN1H/gym-4.png"
     ],
     thumbnail: "https://i.ibb.co/wN4HXxD/simple-gym-website-firebaseapp-com-home.png",
-    sourceCode: {frontend:"https://github.com/DipPal513/gym-website",backend:""},
+    sourceCode: { frontend: "https://github.com/DipPal513/gym-website", backend: "" },
     liveLink: "https://simple-gym-website.web.app/",
     category: "ecommerce",
     challenges: "Faced some challanges in user authentication beacause i was newbie in that but i learnt how to do authentication with firebase"
@@ -167,13 +168,13 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
       "https://i.ibb.co/Pgrgfym/jewelry-4.png"
     ],
     thumbnail: "https://i.ibb.co/QXpxqWv/jewelry-1.png",
-    sourceCode: {frontend:"https://github.com/DipPal513/jewelry-website",backend:"https://github.com/DipPal513/Jewelry-website-server"},
+    sourceCode: { frontend: "https://github.com/DipPal513/jewelry-website", backend: "https://github.com/DipPal513/Jewelry-website-server" },
     liveLink: "https://simple-jewelry-website.firebaseapp.com/",
     category: "ecommerce",
     challenges: "Database optimization, Secure payment integration"
     , technologies: ["react", 'firebase', "bootstrap", "dynamic routing", "private route", 'context api', 'express js', "mongo db"]
   },
- 
+
   {
     id: 4,
     name: "Portfolio Website",
@@ -186,7 +187,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
       "https://i.ibb.co/5j9CxxT/Screenshot-34.png"
     ],
     thumbnail: "https://i.ibb.co/FDGDNDX/Screenshot-33.png",
-    sourceCode: {frontend:"https://github.com/DipPal513/portfolio",backend:""},
+    sourceCode: { frontend: "https://github.com/DipPal513/portfolio", backend: "" },
     liveLink: "https://ykjhho.netlify.app/",
     category: "portfolio",
     challenges: "Interactive UI, Project presentation"
@@ -202,7 +203,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
       "https://i.ibb.co/Pr2Lmk6/adoring-pare-75c8e3-netlify-app-home-1.png",
       "https://i.ibb.co/HB4bZhQ/adoring-pare-75c8e3-netlify-app-home-2.png"],
     thumbnail: "https://i.ibb.co/Pr2Lmk6/adoring-pare-75c8e3-netlify-app-home-1.png", // Add the URL for the thumbnail image
-    sourceCode: {frontend:"https://github.com/DipPal513/academia-website",backend:""},
+    sourceCode: { frontend: "https://github.com/DipPal513/academia-website", backend: "" },
     liveLink: "https://adoring-pare-75c8e3.netlify.app/home",
     category: "service-based",
     challenges: "Service display, Contact integration"
@@ -217,7 +218,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
       'https://i.ibb.co/s9v5ktM/quirky-benz-0101b5-netlify-app-2.png',
       'https://i.ibb.co/FhZbTY0/quirky-benz-0101b5-netlify-app-3.png'],
     thumbnail: "https://i.ibb.co/WzzW3Bp/quirky-benz-0101b5-netlify-app.png", // Add the URL for the thumbnail image
-    sourceCode: {frontend:"https://github.com/DipPal513/evento-website",backend:""},
+    sourceCode: { frontend: "https://github.com/DipPal513/evento-website", backend: "" },
     liveLink: "https://github.com/DipPal513/Evento-Teamplate.git",
     category: "service-based",
     challenges: "Event service presentation, Contact integration"
@@ -230,7 +231,7 @@ It's an open platform**, meaning anyone can leave a review, and businesses can't
       "A minimalistic and clean portfolio UI showcasing projects and skills. It emphasizes simplicity and focuses on highlighting project details.",
     images: ["https://i.ibb.co/DRcHWLH/practical-goldwasser-a3cc7f-netlify-app.png", "https://i.ibb.co/mCVzhdn/practical-goldwasser-a3cc7f-netlify-app-2.png"],
     thumbnail: "https://i.ibb.co/PzvS98b/practical-goldwasser-a3cc7f-netlify-app-1.png", // Add the URL for the thumbnail image
-    sourceCode: {frontend:"https://github.com/DipPal513/repositories",backend:""},
+    sourceCode: { frontend: "https://github.com/DipPal513/repositories", backend: "" },
     liveLink: "https://practical-goldwasser-a3cc7f.netlify.app/",
     category: "portfolio",
     challenges: "Minimalistic design, Project display"
@@ -347,7 +348,7 @@ const skills_data = [
     category: "tools"
 
   },
-  
+
   {
     name: "GitHub",
     logo: <VscGithub />,

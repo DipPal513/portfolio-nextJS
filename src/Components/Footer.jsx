@@ -12,7 +12,7 @@ const Footer = () => {
       whileInView={{ opacity: 1 }}
       className="mx-auto md:px-8 pb-7 pt-14 w-full flex flex-col items-center justify-center"
     >
-      <ul className="flex space-x-5 px-5 bg-transparent items-center mb-3 text-xl">
+      <ul className="flex space-x-5 px-5 bg-transparent items-center mb-3 text-xl mt-5">
         <motion.li
           initial={{ y: 0 }}
           whileHover={{ y: -10, scale: 1.3 }}
